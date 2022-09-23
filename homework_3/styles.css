@@ -1,0 +1,13 @@
+
+
+.pink-yellow {
+  background: linear-gradient(40deg, rgb(254, 192, 203) 50%, yellow 50%);
+}
+
+.txt {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
