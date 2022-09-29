@@ -8,17 +8,18 @@
   text-align: left;
 }
 
-.center {
+.name {
   text-align: center;
 }
 
-/* 04 */
+.numer {
+  background: 200px 300px
 
+}
 
-width: 337px;
-height: 332px;
-left: 32px;
-top: 128px;
-
-background: url();
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
