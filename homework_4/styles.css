@@ -39,25 +39,24 @@
 
 .amount_group {
   display: flex;
+  justify-content: center;
 }
 
+.amount_input {
+  text-align: center;
+  border: 1px solid #0a0909;
+  border-radius: 5px;
+}
 .amount_btn {
   display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
   color: #212529;
   text-align: center;
-  vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
   background-color: #c1e774;
   border: 1px solid #bdbdbd;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  border-radius: .25rem;
-  transition: background-color .15s ease-in-out;
+  padding: 5px 2px;
+  font-size: 15px;
+  border-radius: 5px;
 }
 .amount_btn:hover {
   background-color: #6a6ae8;
