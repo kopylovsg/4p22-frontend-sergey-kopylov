@@ -15,6 +15,7 @@
   font-family: Arial;
   text-align: center;
   font-size: 110%;
+  padding: 10px;
 }
 .container {
   display: flex;
@@ -40,9 +41,11 @@
 .amount_group {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .amount_input {
+  width: 45px;
   text-align: center;
   border: 1px solid #0a0909;
   border-radius: 5px;
@@ -100,3 +103,12 @@ a:active {
   height: 50px;
   background-color: #F0F8FFFF;
 }
+.p_podval {
+  padding: 10px;
+  text-align: center;
+}
+
+.p_amoun {
+  text-align: center;
+}
+
