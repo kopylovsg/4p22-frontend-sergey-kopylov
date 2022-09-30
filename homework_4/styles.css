@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 .shapka {
   background: aliceblue;
 }
@@ -17,6 +18,7 @@
   font-size: 110%;
   padding: 10px;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +52,7 @@
   border: 1px solid #0a0909;
   border-radius: 5px;
 }
+
 .amount_btn {
   display: inline-block;
   color: #212529;
@@ -61,6 +64,7 @@
   font-size: 15px;
   border-radius: 5px;
 }
+
 .amount_btn:hover {
   background-color: #6a6ae8;
 }
@@ -69,12 +73,14 @@
   border-bottom-right-radius: 0;
   position: relative;
  }
+
 .amount_group .amount_btn {
   position: relative;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left-width: 0;
 }
+
 a {
   outline: none;
   text-decoration: none;
@@ -97,12 +103,14 @@ a:active {
   background: #265301;
   color: #fcfffc;
 }
+
 .podval {
   position: relative;
   width:100%;
   height: 50px;
   background-color: #F0F8FFFF;
 }
+
 .p_podval {
   padding: 10px;
   text-align: center;
