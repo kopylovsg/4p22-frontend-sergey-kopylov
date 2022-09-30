@@ -118,14 +118,14 @@ a:active {
   color: #fcfffc;
 }
 
-.podval {
+.footer {
   position: static;
   width:100%;
   height: 50px;
   background-color: #F0F8FFFF;
 }
 
-.p_podval {
+.p_footer {
   padding: 10px;
   text-align: center;
 }
