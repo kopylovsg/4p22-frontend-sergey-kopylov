@@ -32,18 +32,24 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 10px;
-  column-gap: 10px;
+  row-gap: 18px;
+  column-gap: 15px;
   justify-content: center;
+
 }
 
 .box {
   width: 300px;
   height: 400px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px #5b5bc4;
+  box-shadow: 0px 0px 15px 7px #5b5bc4;
+  transition: all 0.4s linear;
+
 }
 
+.box:hover {
+  transform: scale(1.05);
+}
 .img {
   display: flex;
   width: 224px;
