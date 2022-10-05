@@ -10,7 +10,6 @@ body {
   background: #abadb0;
 }
 
-
 .address-book {
   position: relative;
   background-image: linear-gradient(to bottom, blue 45px,  white 45px);
@@ -35,6 +34,19 @@ h1 {
   left: 1vw;
   top: 52px;
 }
+
+a {
+  font-size: 30px;
+  color: greenyellow;
+  padding: 5px;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: orange;
+}
+
 .adress {
   position: absolute;
   background: #f1efef;
@@ -56,6 +68,5 @@ ul {
   background: #0000ff;
   color: white;
   padding: 5px;
-
 }
 
