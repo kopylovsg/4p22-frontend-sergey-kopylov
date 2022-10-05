@@ -35,6 +35,7 @@ body {
   row-gap: 18px;
   column-gap: 15px;
   justify-content: center;
+  margin-bottom: 10px;
 
 }
 
@@ -128,6 +129,7 @@ a:active {
 }
 
 .footer {
+  position: static;
   width:100%;
   height: 50px;
   background-color: #F0F8FFFF;

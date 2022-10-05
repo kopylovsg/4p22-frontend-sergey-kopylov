@@ -1,0 +1,61 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0px 8px;
+  background: #abadb0;
+}
+
+
+.address-book {
+  position: relative;
+  background-image: linear-gradient(to bottom, blue 45px,  white 45px);
+  border-color: #5b5bc4;
+  width: 100vw;
+  height: 630px;
+}
+h1 {
+  font-family: Arial;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.content {
+  position: absolute;
+  background: #b5b5ee;
+  text-align: center;
+  width: 25vw;
+  height: 500px;
+  left: 1vw;
+  top: 52px;
+}
+.adress {
+  position: absolute;
+  background: #f1efef;
+  border: 2px solid aqua;
+  text-align: left;
+  width: 70vw;
+  height: 500px;
+  top: 52px;
+  left: 27vw;
+  overflow-y: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.adress-name {
+  background: #0000ff;
+  color: white;
+  padding: 5px;
+
+}
+
