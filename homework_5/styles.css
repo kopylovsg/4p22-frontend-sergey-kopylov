@@ -70,6 +70,9 @@ ul {
 }
 
 .address-book-adress__name {
+  position: sticky;
+  top: 0;
+  left: 0;
   background: #0000ff;
   color: white;
   padding-left: 11px;
