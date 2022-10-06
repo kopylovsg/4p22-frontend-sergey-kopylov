@@ -72,9 +72,9 @@ ul {
 
 .address-book-adress__name {
   position: sticky;
-  z-index: 1;
   top: 0;
   left: 0;
+  z-index: 1;
   background: #0000ff;
   color: white;
   padding-left: 10px;
