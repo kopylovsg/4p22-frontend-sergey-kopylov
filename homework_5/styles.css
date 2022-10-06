@@ -16,7 +16,7 @@ body {
   width: 100vw;
   height: 630px;
 }
-h1 {
+.address-book-header {
   font-family: Arial;
   text-align: left;
   font-size: 30px;
@@ -34,21 +34,21 @@ h1 {
   top: 52px;
 }
 
-a {
+.address-book-link__link {
   font-size: 30px;
   color: greenyellow;
   padding: 5px;
 }
 
-a:hover {
+.address-book-link__link:hover {
   color: blue;
 }
 
-a:active {
+.address-book-link__link:active {
   color: orange;
 }
 
-a:visited {
+.address-book-link__link:visited {
   color: red;
 }
 
@@ -89,6 +89,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
+  left: 35px;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
