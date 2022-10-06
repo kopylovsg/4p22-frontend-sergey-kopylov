@@ -6,15 +6,16 @@
 
 body {
   padding: 8px;
-  background: #abadb0;
+
+  background: #fcfffc;
 }
 
 .address-book {
   position: relative;
   background-image: linear-gradient(to bottom, blue 47px,  white 47px);
   border-color: #5b5bc4;
-  width: 100vw;
-  height: 630px;
+  width: 1205px;
+  height: 50px;
 }
 .address-book-header {
   font-family: Arial;
@@ -25,13 +26,13 @@ body {
   padding-top: 5px;
 }
 .address-book-link {
-  position: absolute;
+  position: relative;
   background: #b5b5ee;
   text-align: center;
-  width: 25vw;
+  width: 300px;
   height: 500px;
-  left: 10px;
-  top: 52px;
+  left: 0px;
+  top: 5px;
 }
 
 .address-book-link__link {
@@ -53,14 +54,14 @@ body {
 }
 
 .address-book-adress {
-  position: absolute;
+  position: relative;
   background: #f1efef;
   border: 2px solid aqua;
   text-align: left;
-  width: 70vw;
+  width: 900px;
   height: 500px;
-  top: 52px;
-  left: 27vw;
+  top: -495px;
+  left: 305px;
   overflow-y: auto;
 }
 
@@ -71,11 +72,12 @@ ul {
 
 .address-book-adress__name {
   position: sticky;
+  z-index: 1;
   top: 0;
   left: 0;
   background: #0000ff;
   color: white;
-  padding-left: 11px;
+  padding-left: 10px;
 }
 
 .droplnk {
