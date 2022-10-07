@@ -12,11 +12,12 @@ body {
 
 .address-book {
   position: relative;
-  background-image: linear-gradient(to bottom, blue 47px,  white 47px);
-  border-color: #5b5bc4;
+  background: hwb(240 1% 3%);
+  border-radius: 10px;
   width: 1205px;
   height: 50px;
 }
+
 .address-book-header {
   font-family: Arial;
   text-align: left;
@@ -25,20 +26,30 @@ body {
   padding-left: 10px;
   padding-top: 5px;
 }
+
 .address-book-link {
   position: relative;
   background: #b5b5ee;
-  text-align: center;
+  border-radius: 10px;
   width: 300px;
   height: 500px;
   left: 0px;
   top: 5px;
 }
 
-.address-book-link__link {
+.addressbook-link__header {
   font-size: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+}
+
+.address-book-link__link {
+  display: block;
+  font-size: 20px;
+  text-align: left;
   color: greenyellow;
-  padding: 5px;
+  padding-left: 7px;
 }
 
 .address-book-link__link:hover {
@@ -57,12 +68,34 @@ body {
   position: relative;
   background: #f1efef;
   border: 2px solid aqua;
+  border-radius: 10px;
   text-align: left;
   width: 900px;
   height: 500px;
   top: -495px;
   left: 305px;
   overflow-y: auto;
+}
+
+.address-book-adress::-webkit-scrollbar { 
+  width: 10px;
+ } 
+
+
+ .address-book-adress::-webkit-scrollbar-track { 
+  background: #f1efef;
+  border-radius: 5px;
+}
+
+
+.address-book-adress::-webkit-scrollbar-thumb { 
+  background: #fff;
+  border-radius: 5px;
+}
+
+
+.address-book-adress::-webkit-scrollbar-thumb:hover { 
+  background: #555;
 }
 
 ul {
@@ -100,7 +133,7 @@ ul {
   border-radius: 10px;
   min-width: 200px;
   box-shadow: 0px 0px 20px 0px #949393;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown-content a:hover {
@@ -111,3 +144,12 @@ ul {
   display: block;
 }
 
+.footer {
+  display: block;
+  width: 1205px;
+  height: 20px;
+  background: #5b5bc4;
+  border-radius: 5px;
+  text-align: center;
+  color: #090404;
+}
