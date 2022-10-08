@@ -31,7 +31,9 @@ body {
 
 .container {
   display: flex;
+  width: 1180px;
 }
+
 .address-book-link {
   position: relative;
   background: #b5b5ee;
@@ -39,7 +41,6 @@ body {
   width: 280px;
   height: 500px;
   margin-left: 20px;
-  left: 0px;
   top: 5px;
 }
 
@@ -76,9 +77,8 @@ body {
   border: 2px solid aqua;
   border-radius: 10px;
   text-align: left;
-  width: 880px;
+  width: 1000px;
   height: 500px;
-  margin-right: 20px;
   top: 5px;
   overflow-y: auto;
 }
