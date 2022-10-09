@@ -28,12 +28,13 @@ body {
   padding-top: 13px;
 }
 
-.box {
+.app {
   display: flex;
 }
+
 .links {
   position: relative;
-  background: #b5b5ee;
+  background: #ffffff;
   width: 288px;
   height: 699px;
   top: 5px;
@@ -69,9 +70,9 @@ body {
   color: red;
 }
 
-.container {
+.address-book {
   position: relative;
-  background: #f1efef;
+  background: #fcfffc;
   text-align: left;
   width: 1152px;
   height: 699px;
@@ -98,6 +99,10 @@ ul {
   padding-left: 10px;
 }
 
+.address-book__address-item {
+  width: 100px;
+}
+
 .addres-book__addres-link {
   color: #090404;
   font-family: "Roboto Light";
@@ -117,12 +122,17 @@ ul {
   z-index: 2;
 }
 
-.addres-book__addres-dropdown a:hover {
-  background-color: #0000ff;
-}
+/*.addres-book__addres-dropdown .addres-book__addres-link:hover {*/
+/*  background-color: #0000ff;*/
+/*}*/
 
 .address-book__address-item:hover .addres-book__addres-dropdown {
   display: block;
+}
+
+.address-book__address-item:hover {
+  background: #e3e3f8;
+  width: 1130px;
 }
 
 .footer {
@@ -133,5 +143,4 @@ ul {
   text-align: center;
   padding-top: 7px;
   color: #090404;
-
 }
