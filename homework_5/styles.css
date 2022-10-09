@@ -6,102 +6,78 @@
 
 body {
   padding: 8px;
-
   background: #fcfffc;
 }
 
-.address-book {
+.header {
   position: relative;
-  background: hwb(240 1% 3%);
-  border-radius: 10px;
-  width: 1160px;
-  height: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  background: blue;
+  width: 1440px;
+  height: 89px;
 }
 
-.address-book-header {
-  font-family: Arial;
+.header__title {
+  font-family: "Roboto Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 63px;
+  color: #FFFFFF;
   text-align: left;
-  font-size: 30px;
-  color: white;
-  padding-left: 10px;
-  padding-top: 5px;
+  padding-left: 29px;
+  padding-top: 13px;
 }
 
-.container {
+.box {
   display: flex;
-  width: 1180px;
 }
-
-.address-book-link {
+.links {
   position: relative;
   background: #b5b5ee;
-  border-radius: 10px;
-  width: 280px;
-  height: 500px;
-  margin-left: 20px;
+  width: 288px;
+  height: 699px;
   top: 5px;
 }
 
-.addressbook-link__header {
-  font-size: 30px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  padding-bottom: 15px;
-}
-
-.address-book-link__link {
-  display: block;
-  font-size: 20px;
-  text-align: left;
-  color: greenyellow;
+.links__title {
+  font-family: "Roboto Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #050404;
+  padding-bottom: 5px;
   padding-left: 7px;
 }
 
-.address-book-link__link:hover {
+.links__item-link {
+  font-family: "Roboto Light";
+  font-size: 24px;
+  text-align: left;
+  color: #FF710B;
+  padding-left: 5px;
+}
+
+.links__item-link:hover {
   color: blue;
 }
 
-.address-book-link__link:active {
+.links__item-link:active {
   color: orange;
 }
 
-.address-book-link__link:visited {
+.links__item-link:visited {
   color: red;
 }
 
-.address-book-adress {
+.container {
   position: relative;
   background: #f1efef;
-  border: 2px solid aqua;
-  border-radius: 10px;
   text-align: left;
-  width: 1000px;
-  height: 500px;
+  width: 1152px;
+  height: 699px;
   top: 5px;
+  left: 0px;
   overflow-y: auto;
-}
-
-.address-book-adress::-webkit-scrollbar { 
-  width: 10px;
- } 
-
-
- .address-book-adress::-webkit-scrollbar-track { 
-  background: #f1efef;
-  border-radius: 5px;
-}
-
-
-.address-book-adress::-webkit-scrollbar-thumb { 
-  background: #fff;
-  border-radius: 5px;
-}
-
-
-.address-book-adress::-webkit-scrollbar-thumb:hover { 
-  background: #555;
 }
 
 ul {
@@ -109,28 +85,27 @@ ul {
   padding-left: 5px;
 }
 
-.address-book-adress__name {
+.address-book__name {
   position: sticky;
+  width: 1135px;
   top: 0;
   left: 0;
   z-index: 1;
   background: #0000ff;
   color: white;
+  font-family: "Roboto Light";
+  font-size: 28px;
   padding-left: 10px;
 }
 
-.droplnk {
+.addres-book__addres-link {
   color: #090404;
-  font-size: 15px;
+  font-family: "Roboto Light";
+  font-size: 28px;
   border: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
+.addres-book__addres-dropdown {
   display: none;
   position: absolute;
   left: 35px;
@@ -142,23 +117,21 @@ ul {
   z-index: 2;
 }
 
-.dropdown-content a:hover {
+.addres-book__addres-dropdown a:hover {
   background-color: #0000ff;
 }
 
-.dropdown:hover .dropdown-content {
+.address-book__address-item:hover .addres-book__addres-dropdown {
   display: block;
 }
 
 .footer {
   display: block;
-  width: 1160px;
-  height: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 1440px;
+  height: 30px;
   background: #5b5bc4;
-  border-radius: 5px;
   text-align: center;
+  padding-top: 7px;
   color: #090404;
+
 }
