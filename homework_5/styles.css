@@ -99,6 +99,11 @@ ul {
   padding-left: 10px;
 }
 
+.address-book__address-list {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .address-book__address-item {
   width: 100px;
 }
