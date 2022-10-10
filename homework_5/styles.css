@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+  url('fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   padding: 8px;
   background: #fcfffc;
@@ -11,16 +20,17 @@ body {
 
 .header {
   position: relative;
-  background: #590bff;
   width: 1440px;
   height: 89px;
+  background: #590bff;
 }
 
 .header__title {
-  font-family: "Roboto Light";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 54px;
+  text-align: left;
   line-height: 63px;
   color: #FFFFFF;
   text-align: left;
@@ -34,14 +44,14 @@ body {
 
 .links {
   position: relative;
-  background: #ffffff;
   width: 288px;
   height: 699px;
+  background: #ffffff;
   top: 5px;
 }
 
 .links__title {
-  font-family: "Roboto Light";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -51,7 +61,7 @@ body {
 }
 
 .links__item-link {
-  font-family: "Roboto Light";
+  font-family: "Roboto-Regular";
   font-size: 24px;
   text-align: left;
   color: #FF710B;
@@ -94,7 +104,7 @@ ul {
   z-index: 1;
   background: #590bff;
   color: white;
-  font-family: "Roboto Light";
+  font-family: "Roboto-Regular";
   font-size: 28px;
   padding-left: 10px;
 }
@@ -110,13 +120,12 @@ ul {
 
 .address-book__address-link {
   color: #090404;
-  font-family: "Roboto Light";
+  font-family: "Roboto-Regular";
   font-size: 28px;
   border: none;
 }
 
 .address-book__address-dropdown {
-  display: none;
   position: absolute;
   left: 35px;
   padding: 10px;
@@ -131,8 +140,8 @@ ul {
 /*  background-color: #0000ff;*/
 /*}*/
 
-.address-book__address-item:hover .address-book__address-dropdown {
-  display: block;
+.address-book__address-item:not(:hover) .address-book__address-dropdown {
+  display: none;
 }
 
 .address-book__address-item:hover {
