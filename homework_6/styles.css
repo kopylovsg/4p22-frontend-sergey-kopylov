@@ -31,7 +31,9 @@ p {
   width: 100%;
   max-width: 1440px;
   height: 89px;
+  margin: 0 auto;
   background: var(--f-color);
+
 }
 
 .header__title {
@@ -48,12 +50,17 @@ p {
 
 .app {
   display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 699px;
+  margin: 0 auto;
+
 }
 
 .app__links {
   position: relative;
   top: 5px;
-  width: 50%;
+  width: 40%;
   max-width: 350px;
   height: 300px;
   padding: 5px;
@@ -157,11 +164,13 @@ ul {
 
 .footer {
   display: block;
+  position: relative;
+  top: 5px;
+  z-index: 3;
   width: 100%;
   max-width: 1440px;
   height: 30px;
-  padding-top: 7px;
-  margin-top: 10px;
+  margin: 0 auto;
   text-align: center;
   background: var(--f-color);
 }
