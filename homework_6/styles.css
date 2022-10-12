@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --t-color: black;
+  --f-color: #590bff;
+  --p-color: #3d0000
+}
 
 @font-face {
   font-family: "Roboto";
@@ -18,12 +23,15 @@ body {
   background: #fcfffc;
 }
 
+p {
+  color: var(--p-color);
+}
 .header {
   position: relative;
   width: 100%;
   max-width: 1440px;
   height: 89px;
-  background: #590bff;
+  background: var(--f-color);
 }
 
 .header__title {
@@ -42,28 +50,27 @@ body {
   display: flex;
 }
 
-.links {
+.app__links {
   position: relative;
   top: 5px;
-  width: 30%;
+  width: 50%;
   max-width: 350px;
-  height: 699px;
+  height: 300px;
+  padding: 5px;
+  margin-right: 10px;
+  border-right: 4px solid #e7e6e6;
   background: #ffffff;
 }
 
 .links__title {
-  padding-bottom: 5px;
-  padding-left: 7px;
   font-family: "Roboto", "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
-  color: #050404;
-
+  color: var(--t-color);
 }
 
 .links__link {
-  padding-left: 5px;
   font-family: "Roboto", "Arial";
   font-size: 24px;
   text-align: left;
@@ -85,7 +92,8 @@ body {
 .address-book {
   position: relative;
   top: 5px;
-  width: 1090px;
+  flex: 100%;
+  max-width: 1080px;
   height: 699px;
   text-align: left;
   background: #fcfffc;
@@ -104,7 +112,7 @@ ul {
   z-index: 1;
   width: 100%;
   padding-left: 10px;
-  background: #590bff;
+  background: var(--f-color);
   font-family: "Roboto", "Arial";
   font-size: 28px;
   color: white;
@@ -122,8 +130,8 @@ ul {
 .address-book__link {
   font-family: "Roboto", "Arial";
   font-size: 28px;
-  color: #090404;
   border: none;
+  color: var(--t-color);
 }
 
 .address-book__dropdown {
@@ -155,5 +163,5 @@ ul {
   padding-top: 7px;
   margin-top: 10px;
   text-align: center;
-  background: #590bff;
+  background: var(--f-color);
 }
