@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+  url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background: blue;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  top: 100px;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px gray;
+  background: white;
+}
+.form-header {
+  position: relative;
+  width: 70px;
+  left: 50%;
+  font-family: "Roboto";
+  font-size: 29px;
+  font-weight: bold;
+  color: #565C66;
+}
+p {
+  margin: 0;
+}
+
+.form-email {
+  position: relative;
+  width: 100%;
+
+
+}
+
+.form-email__title {
+  padding-top: 20px;
+  padding-left: 5px;
+  font-family: "Roboto";
+  font-size: 9px;
+  font-weight: bold;
+  color: #8d909b;
+  user-select: none;
+}
+
+.form-email__input {
+  width: 130%;
+  border-radius: 4px;
+
+}
+
+.form-password {
+  position: relative;
+  width: 100%;
+
+
+}
+
+.form-password__title {
+  padding-top: 5px;
+  padding-left: 5px;
+  font-family: "Roboto";
+  font-size: 9px;
+  font-weight: bold;
+  color: #8d909b;
+  user-select: none;
+}
+
+.form-password__input {
+  width: 130%;
+  border-radius: 4px;
+}
+
+.form-consent__input {
+
+}
+
+.form-consent__agreement {
+  padding-left: 5px;
+  font-family: "Roboto";
+  font-size: 9px;
+  font-weight: bold;
+  color: #8d909b;
+}
+
+.form-consent__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-consent__input+.form-consent__agreement {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.form-consent__input+.form-consent__agreement::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 3px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+
+}
+
+.form-consent__input:checked+.form-consent__agreement::before {
+  border-color: #0b76ef;
+  /*background-color: #0b76ef;*/
+  background-image: url("images/chekOk.png");
+}
+
+.form-consent__input:not(:disabled):not(:checked)+.form-consent__agreement:hover::before {
+  border-color: #b3d7ff;
+}
+
+.form-consent__input:not(:disabled):active+.form-consent__agreement::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.form-consent__input:focus+.form-consent__agreement::before {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.form-consent__input:focus:not(:checked)+.form-consent__agreement::before {
+  border-color: #80bdff;
+}
+
+.form-consent__input:disabled+.form-consent__agreement::before {
+  background-color: #e9ecef;
+}
+
+.form-button {
+  position: relative;
+  left: 50%;
+}
