@@ -5,7 +5,7 @@
 :root {
   --all-color: #787878;
   --txt-color: #cccccc;
-  --s-title: 28px;
+  --inp-title: 638px;
 
 }
 @font-face {
@@ -18,14 +18,14 @@
 }
 
 body {
-  margin: 0;
+
   background: #1A226B;
 }
 
 .box {
   display: block;
   position: relative;
-  top: 100px;
+  top: 82px;
   width: 600px;
   height: 412px;
   margin: 0 auto;
@@ -56,8 +56,9 @@ p {
 }
 
 .form-email {
+  align-self: center;
   padding-top: 30px;
-  padding-left: 25px;
+
 }
 
 .form-email__title {
@@ -91,7 +92,7 @@ p {
 
 .form-password {
   padding-top: 20px;
-  padding-left: 25px;
+  align-self: center;
 }
 
 .form-password__title {
@@ -122,9 +123,6 @@ p {
   color: var(--txt-color);
 }
 
-.form-consent__input {
-
-}
 
 .form-consent__agreement {
   padding-left: 25px;
@@ -199,13 +197,22 @@ p {
 }
 
 @media screen and (max-width: 769px) {
+
   .box {
-    width: 728px;
+    width: 100%;
+    max-width: 728px;
     height: 697px;
+    max-height: 697px;
+    padding: 0;
 
   }
+  .form {
 
+    max-width: 728px;
+
+  }
   .form-header {
+    padding-top: 20px;
     font-size: 60px;
 
   }
@@ -214,21 +221,38 @@ p {
     font-size: 24px;
 
   }
+  .form-email {
+    width: 100%;
+    max-width: 638px;
+    padding-left: 45px;
+    padding-right: 45px;
 
+  }
   .form-email__input {
-    width: 638px;
+    width: 100%;
+
 
   }
 
   .form-password__title {
-
     font-size: 24px;
 
   }
 
-  .form-password__input {
-    width: 638px;
+  .form-password {
+    width: 100%;
+    max-width: 638px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
+  .form-password__input {
+    width: 100%;
+
+  }
+
+  .form-consent__agreement {
+    padding-left: 80px;
   }
 
   .form-consent__agreement {
