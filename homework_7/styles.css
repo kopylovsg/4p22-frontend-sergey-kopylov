@@ -127,7 +127,7 @@ p {
 .form-consent__agreement {
   padding-left: 25px;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: bold;
@@ -190,7 +190,6 @@ p {
   height: 52px;
   background: #1A226B;
   border-radius: 10px;
-  align-self: center;
   font-family: "Roboto";
   font-size: 24px;
   font-weight: bold;
