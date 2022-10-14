@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --all-color: #787878;
+  --txt-color: #cccccc;
+}
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Regular.woff2") format("woff2"),
@@ -13,20 +17,20 @@
 
 body {
   margin: 0;
-  background: blue;
+  background: #1A226B;
 }
 
 .box {
   display: block;
   position: relative;
   top: 100px;
-  width: 400px;
-  height: 265px;
+  width: 600px;
+  height: 412px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid gray;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 1px gray;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 10px #1A226B;
   background: white;
 }
 
@@ -38,65 +42,83 @@ body {
 
 .form-header {
   position: relative;
+  width: 115px;
+  height: 50px;
   align-self: center;
   font-family: "Roboto";
-  font-size: 29px;
+  font-size: 50px;
   font-weight: bold;
-  color: #565C66;
+  color: var(--all-color);
 }
 p {
   margin: 0;
 }
 
 .form-email {
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-left: 25px;
 }
 
 .form-email__title {
   padding-top: 5px;
   padding-left: 5px;
   font-family: "Roboto";
-  font-size: 9px;
+  font-size: 16px;
   font-weight: bold;
-  color: #8d909b;
+  color: var(--all-color);
   user-select: none;
 }
 
 .form-email__input {
-  width: 100%;
-  height: 30px;
+  width: 510px;
+  height: 49px;
   padding-left: 5px;
-  border-radius: 4px;
+  border: 2px solid var(--all-color);
+  border-radius: 10px;
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 28px;
   font-weight: bold;
-  color: #bcbebc;
+  color: var(--all-color);
+}
 
+.form-email__input::placeholder {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--txt-color);
 }
 
 .form-password {
   padding-top: 20px;
+  padding-left: 25px;
 }
 
 .form-password__title {
   padding-top: 5px;
   padding-left: 5px;
   font-family: "Roboto";
-  font-size: 9px;
+  font-size: 16px;
   font-weight: bold;
-  color: #8d909b;
+  color: var(--all-color);
   user-select: none;
 }
 
 .form-password__input {
-  width: 100%;
-  height: 30px;
+  width: 510px;
+  height: 49px;
   padding-left: 5px;
-  border-radius: 4px;
+  border: 2px solid var(--all-color);
+  border-radius: 10px;
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 28px;
   font-weight: bold;
-  color: #bcbebc;
+  color: var(--all-color);
+}
+.form-password__input::placeholder {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--txt-color);
 }
 
 .form-consent__input {
@@ -104,13 +126,13 @@ p {
 }
 
 .form-consent__agreement {
-  padding-left: 0px;
+  padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 25px;
   font-family: "Roboto";
   font-size: 9px;
   font-weight: bold;
-  color: #8d909b;
+  color: var(--all-color);
 }
 
 .form-consent__input {
@@ -129,8 +151,8 @@ p {
   display: inline-block;
   width: 14px;
   height: 14px;
-  border: 1px solid #adb5bd;
-  border-radius: 3px;
+  border: 1px solid var(--all-color);
+  border-radius: 5px;
   margin-right: 5px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -165,9 +187,13 @@ p {
 
 .form-button {
   align-self: center;
-  width: 80px;
-  height: 25px;
-  background: #0b76ef;
-  border-radius: 5px;
+  width: 180px;
+  height: 52px;
+  background: #1A226B;
+  border-radius: 10px;
   align-self: center;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
 }
