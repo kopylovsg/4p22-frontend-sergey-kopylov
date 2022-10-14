@@ -74,7 +74,7 @@ p {
 .form-email__input {
   width: 35.4166vw;
   height: 3.4027vw;
-  padding-left: 0.3472vw;
+  padding-left: 1.0416vw;
   border: 2px solid var(--all-color);
   border-radius: 0.6944vw;
   font-family: "Roboto";
@@ -104,7 +104,7 @@ p {
 .form-password__input {
   width: 35.4166vw;
   height: 3.4027vw;
-  padding-left: 0.3472vw;
+  padding-left: 1.0416vw;
   border: 2px solid var(--all-color);
   border-radius: 0.6944vw;
   font-family: "Roboto";
@@ -216,12 +216,13 @@ p {
   .form-email__input {
     width: 83.072916vw;
     height: 6.3802083vw;
+    padding-left: 1.9531249vw;
     border-radius: 1.302083vw;
     font-size: 3.64583vw;
   }
 
   .form-email__input::placeholder {
-    padding-left: 1.9531249vw;
+
     font-size: 3.64583vw;
   }
 
@@ -241,12 +242,13 @@ p {
    .form-password__input {
     width: 83.072916vw;
     height: 6.3802083vw;
+    padding-left: 1.9531249vw;
     border-radius: 1.302083vw;
     font-size: 3.64583vw;
   }
 
   .form-password__input::placeholder {
-    padding-left: 1.9531249vw;
+
     font-size: 3.64583vw;
   }
 
