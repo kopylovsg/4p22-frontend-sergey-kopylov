@@ -5,6 +5,8 @@
 :root {
   --all-color: #787878;
   --txt-color: #cccccc;
+  --s-title: 28px;
+
 }
 @font-face {
   font-family: "Roboto";
@@ -195,3 +197,56 @@ p {
   font-weight: bold;
   color: #ffffff;
 }
+
+@media screen and (max-width: 769px) {
+  .box {
+    width: 728px;
+    height: 697px;
+
+  }
+
+  .form-header {
+    font-size: 60px;
+
+  }
+
+  .form-email__title {
+    font-size: 24px;
+
+  }
+
+  .form-email__input {
+    width: 638px;
+
+  }
+
+  .form-password__title {
+
+    font-size: 24px;
+
+  }
+
+  .form-password__input {
+    width: 638px;
+
+  }
+
+  .form-consent__agreement {
+     font-size: 18px;
+
+  }
+
+  .form-consent__input + .form-consent__agreement::before {
+    width: 32px;
+    height: 32px;
+
+  }
+
+  .form-button {
+
+    width: 220px;
+    height: 80px;
+    font-size: 32px;
+  }
+}
+
