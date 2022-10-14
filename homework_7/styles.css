@@ -5,9 +5,8 @@
 :root {
   --all-color: #787878;
   --txt-color: #cccccc;
-  --inp-title: 638px;
-
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Regular.woff2") format("woff2"),
@@ -18,8 +17,9 @@
 }
 
 body {
-
   background: #1A226B;
+  margin: 8px;
+
 }
 
 .box {
@@ -38,7 +38,6 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .form-header {
@@ -60,12 +59,12 @@ p {
 }
 
 .form-email__title {
-  padding-top: 5px;
-  padding-left: 5px;
+  padding: 5px;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: bold;
   color: var(--all-color);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   user-select: none;
 }
 
@@ -120,18 +119,16 @@ p {
 
 .form-consent__agreement {
   padding-left: 25px;
-  padding-top: 10px;
-  padding-bottom: 40px;
+  padding-top: 12px;
+  padding-bottom: 45px;
   font-family: "Roboto";
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
   color: var(--all-color);
 }
 
 .form-consent__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  display: none
 }
 
 .form-consent__input+.form-consent__agreement {
@@ -142,18 +139,17 @@ p {
 .form-consent__input+.form-consent__agreement::before {
   content: '';
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
   border: 2px solid var(--all-color);
-  border-radius: 5px;
-  margin-right: 5px;
+  border-radius: 7px;
+  margin-right: 9px;
   background-repeat: no-repeat;
   background-size: 110% 100%;
 }
 
 .form-consent__input:checked+.form-consent__agreement::before {
   border-color: #0b76ef;
-  /*background-color: #0b76ef;*/
   background-image: url("images/chekOk.png");
 }
 
@@ -215,6 +211,7 @@ p {
 
   .form-email__title {
     font-size: 24px;
+    text-shadow: none;
 
   }
   .form-email {
