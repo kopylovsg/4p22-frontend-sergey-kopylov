@@ -45,6 +45,7 @@ body {
 
 .form-header {
   position: relative;
+  padding-top: 0.0694vw;
   align-self: center;
   font-family: "Roboto";
   font-size: 3.4722vw;
@@ -57,7 +58,7 @@ p {
 
 .form-email {
   align-self: center;
-  padding-top: 0.6944vw;
+  padding-top: 0.057vw;
 
 }
 
@@ -91,7 +92,7 @@ p {
 }
 
 .form-password {
-  padding-top: 2.0833vw;
+  padding-top: 2.0533vw;
   align-self: center;
 }
 
@@ -122,8 +123,8 @@ p {
 
 .form-consent__agreement {
   padding-left: 1.7361vw;
-  padding-top: 0.8333vw;
-  padding-bottom: 3.1249vw;
+  padding-top: 1.0933vw;
+  padding-bottom: 3.5249vw;
   font-family: "Roboto";
   font-size: 0.9722vw;
   font-weight: normal;
@@ -142,10 +143,10 @@ p {
 .form-consent__input+.form-consent__agreement::before {
   content: '';
   display: inline-block;
-  width: 1.666vw;
-  height: 1.666vw;
+  width: 1.606vw;
+  height: 1.606vw;
   border: 2px solid var(--all-color);
-  border-radius: 7px;
+  border-radius: calc(7*0.06944vw);
   margin-right: 0.6249vw;
   background-repeat: no-repeat;
   background-size: 110% 100%;
@@ -204,11 +205,16 @@ p {
 
   }
   .form-header {
-    padding-top: 2.60416vw;
+    padding-top: 3.47416vw;
     font-size: 7.81249vw;
   }
 
+  .form-email {
+    padding-top: 0;
+  }
+
   .form-email__title {
+    padding-top: 0;
     font-size: 3.1249vw;
     text-shadow: none;
   }
@@ -225,12 +231,14 @@ p {
 
     font-size: 3.64583vw;
   }
-
+  .form-password {
+    padding-top: 0;
+  }
   .form-password__title {
     position: relative;
     z-index: 0;
     opacity: 1;
-    padding-top: 0.65104vw;
+    padding-top: 0;
     padding-left: 0.65104vw;
     font-family: "Roboto";
     font-size: 3.1249vw;
@@ -254,8 +262,8 @@ p {
 
   .form-consent__agreement {
     position: relative;
-    padding-top: 1.302083vw;
-    padding-bottom: 5.2083vw;
+    padding-top: 2.802083vw;
+    padding-bottom: 8.2083vw;
     padding-left: 0;
   }
 
@@ -264,8 +272,9 @@ p {
   }
 
   .form-consent__input + .form-consent__agreement::before {
-    width: 4.1666vw;
-    height: 4.1666vw;
+    width: 3.8vw;
+    height: 3.8vw;
+    border-radius: calc(7*0.130208vw);
   }
 
   .form-button {
