@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   --all-color: #787878;
   --txt-color: #cccccc;
@@ -15,8 +19,10 @@
   font-style: normal;
   font-display: swap;
 }
+
 html {
   height: 100%;
+
 }
 body {
   display: grid;
@@ -52,14 +58,10 @@ body {
   font-weight: bold;
   color: var(--all-color);
 }
-p {
-  margin: 0;
-}
 
 .form-email {
   align-self: center;
   padding-top: 0.057vw;
-
 }
 
 .form-email__title {
@@ -113,13 +115,13 @@ p {
   font-weight: bold;
   color: var(--all-color);
 }
+
 .form-password__input::placeholder {
   font-family: "Roboto";
   font-size: 1.944vw;
   font-weight: bold;
   color: var(--txt-color);
 }
-
 
 .form-consent__agreement {
   padding-left: 1.7361vw;
@@ -140,6 +142,7 @@ p {
   align-items: center;
   user-select: none;
 }
+
 .form-consent__input+.form-consent__agreement::before {
   content: '';
   display: inline-block;
@@ -201,7 +204,7 @@ p {
   .form {
     padding-left: 5.8593749vw;
     padding-right: 5.8593749vw;
-    max-height: 90.755208vw;
+    height: calc(344*100/768vw);
 
   }
   .form-header {
@@ -229,7 +232,6 @@ p {
   }
 
   .form-email__input::placeholder {
-
     font-size: 3.64583vw;
   }
   .form-password {
@@ -265,7 +267,7 @@ p {
   .form-consent__agreement {
     position: relative;
     padding-top: 2.802083vw;
-    padding-bottom: 8.2083vw;
+
     padding-left: 0;
   }
 
@@ -276,12 +278,13 @@ p {
   .form-consent__input + .form-consent__agreement::before {
     width: 3.8vw;
     height: 3.8vw;
-    border-radius: calc(7*0.130208vw);
+    border-radius: calc(7*100/760vw);
   }
 
   .form-button {
     width: 28.64583vw;
     height: 10.4166vw;
+    margin-top: 50px;
     border-radius: 1.302083vw;
     font-size: 4.1666vw;
   }

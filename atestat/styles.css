@@ -1,0 +1,473 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+  url("/fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+  url("/fonts/Inter-Medium.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format('woff2'),
+  url("/fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+  url('/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+  url('/fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+  url('/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --all-color: #787878;
+  --font-actin: #1A226B;
+}
+
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 80px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-bar__img {
+  flex: 1 2 15%;
+  margin: 18px 30px;
+  /*background-image: url("images/logo.png");*/
+  width: 220px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-bar__header {
+
+  flex: 1 2 55%;
+
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--all-color);
+}
+
+.nav-bar__link {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 2 20%;
+  font-family: "Inter";
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--all-color);
+}
+
+.nav-bar__registration:visited {
+  color: var(--font-actin);
+}
+
+.nav-bar__link-enter:visited {
+  color: var(--font-actin);
+}
+
+.form-enter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 125px;
+  width: 600px;
+  height: 383px;
+  margin: 0 auto;
+  padding: 10px 45px 20px;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+
+.enter-header {
+  position: relative;
+  align-self: center;
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--all-color);
+  padding-top: 12px;
+}
+
+.enter-email {
+  align-self: center;
+  padding-top: 10px;
+}
+
+.enter-email__title {
+  padding-left: 8px;
+  padding-bottom: 4px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.enter-email__input {
+  width: 510px;
+  height: 49px;
+  padding-left: 15px;
+  border: 2px solid var(--all-color);
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.enter-email__input::placeholder {
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.enter-password {
+  padding-top: 8px;
+  padding-bottom: 52px;
+  align-self: center;
+}
+
+.enter-password__title {
+  padding-left: 8px;
+  padding-bottom: 4px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.enter-password__input {
+  width: 510px;
+  height: 49px;
+  padding-left: 15px;
+  border: 2px solid var(--all-color);
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+.enter-password__input::placeholder {
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.form-registration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 125px;
+  width: 600px;
+  height: 875px;
+  margin: 0 auto;
+  padding: 10px 45px 20px;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+
+.registration-header {
+  position: relative;
+  align-self: center;
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--all-color);
+  margin-top: 12px;
+}
+
+.registration-email {
+  align-self: center;
+  padding-top: 10px;
+}
+
+.registration-email__title {
+  padding-bottom: 4px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.registration-email__input {
+  width: 510px;
+  height: 49px;
+  padding-left: 15px;
+  border: 2px solid var(--all-color);
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.registration-email__input::placeholder {
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.registration-password {
+  padding-top: 10px;
+  align-self: center;
+}
+
+.registration-password__title {
+  padding-bottom: 4px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--all-color);
+
+  user-select: none;
+}
+
+.registration-password__input {
+  width: 510px;
+  height: 49px;
+  padding-left: 15px;
+  border: 2px solid var(--all-color);
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.registration-password__input::placeholder {
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.registration-sex__title {
+  margin: 8px 0 10px -2px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.registration-sex__label {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--all-color);
+  line-height: 0.9;
+  display: grid;
+  grid-template-columns: 0px auto;
+  gap: 28px;
+}
+
+.registration-sex__label + .registration-sex__label {
+  margin-top: 12px;
+
+}
+
+.registration-sex__input {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: var(--all-color);
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--all-color);
+  border-radius: 50%;
+  transform: translateY(-4px);
+}
+
+.registration-sex__input {
+  display: grid;
+  place-content: center;
+}
+
+.registration-sex__input::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 10px 10px var(--all-color);
+
+}
+
+.registration-sex__input:checked::before {
+  transform: scale(1);
+}
+
+.registration-info {
+  width: 100%;
+  height: 266px;
+  margin-bottom: 25px;
+}
+
+.registration-info__title {
+  padding-bottom: 5px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.registration-info__about {
+  width: 100%;
+  height: 246px;
+  border: 2px solid var(--all-color);
+  resize: none;
+  padding-left: 15px;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.registration-info__about::placeholder {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+
+.registration-agreement {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--all-color);
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: 0px auto;
+  gap: 28px;
+  margin-bottom: 65px;
+}
+
+.registration-agreement__input {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: var(--all-color);
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--all-color);
+
+  /*transform: translateY(-4px);*/
+}
+
+.registration-agreement__input {
+
+  display: grid;
+  place-content: center;
+}
+
+.registration-agreement__input::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 10px 10px var(--all-color);
+
+}
+
+.registration-agreement__input:checked::before {
+  transform: scale(1);
+}
+
+
+.registration-button {
+  align-self: center;
+  width: 180px;
+  height: 52px;
+  background: var(--font-actin);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+}
+
+.enter-button {
+  align-self: center;
+  width: 180px;
+  height: 52px;
+  background: var(--font-actin);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+}
