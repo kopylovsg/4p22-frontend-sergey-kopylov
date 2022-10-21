@@ -198,8 +198,8 @@ header {
 }
 
 .enter-password {
-  padding-top: 8px;
-  padding-bottom: 52px;
+
+
   align-self: center;
 }
 
@@ -477,6 +477,8 @@ header {
   text-align: center;
 }
 .enter-button {
+  align-self: center;
+
   width: 180px;
   height: 52px;
   background: var(--font-actin);
