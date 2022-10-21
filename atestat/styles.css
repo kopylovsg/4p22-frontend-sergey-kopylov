@@ -82,12 +82,23 @@ html {
   margin: 0 auto;
 }
 
+body {
+  display: grid;
+  gap: 125px;
+
+  justify-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+}
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+
   height: 80px;
   background: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -103,9 +114,7 @@ html {
 }
 
 .nav-bar__header {
-
   flex: 1 2 55%;
-
   font-family: "Inter";
   font-size: 36px;
   font-weight: 700;
@@ -132,32 +141,32 @@ html {
 }
 
 .form-enter {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  top: 125px;
+
+  display: grid;
+  justify-self: center;
+  gap: 10px;
   width: 600px;
   height: 383px;
-  margin: 0 auto;
+
   padding: 10px 45px 20px;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   background: white;
 }
 
-
 .enter-header {
-  position: relative;
+
   align-self: center;
-  font-family: 'Roboto';
+  text-align: center;
+  font-family: "Roboto";
   font-size: 50px;
   font-weight: 700;
   color: var(--all-color);
-  padding-top: 12px;
+
 }
 
 .enter-email {
   align-self: center;
-  padding-top: 10px;
+
 }
 
 .enter-email__title {
@@ -222,32 +231,34 @@ html {
 }
 
 .form-registration {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+
+  display: grid;
+  justify-self: center;
+  gap: 10px;
   top: 125px;
   width: 600px;
   height: 875px;
-  margin: 0 auto;
-  padding: 10px 45px 20px;
+
+  padding: 22px 45px 37px;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   background: white;
 }
 
 
 .registration-header {
-  position: relative;
+
   align-self: center;
+  text-align: center;
   font-family: 'Roboto';
   font-size: 50px;
   font-weight: 700;
   color: var(--all-color);
-  margin-top: 12px;
+
 }
 
 .registration-email {
   align-self: center;
-  padding-top: 10px;
+
 }
 
 .registration-email__title {
@@ -278,7 +289,7 @@ html {
 }
 
 .registration-password {
-  padding-top: 10px;
+
   align-self: center;
 }
 
@@ -450,6 +461,7 @@ html {
 
 .registration-button {
   align-self: center;
+  text-align: center;
   width: 180px;
   height: 52px;
   background: var(--font-actin);
@@ -460,8 +472,11 @@ html {
   border: none;
 }
 
-.enter-button {
+.enter {
   align-self: center;
+  text-align: center;
+}
+.enter-button {
   width: 180px;
   height: 52px;
   background: var(--font-actin);
