@@ -10,66 +10,8 @@
   outline: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 p {
   margin: 0;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
-  url("/fonts/Inter-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
-  url("/fonts/Inter-Medium.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Regular.woff2") format('woff2'),
-  url("/fonts/Inter-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
-  url('/fonts/Roboto-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
-  url('/fonts/Roboto-Medium.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
-  url('/fonts/Roboto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 :root {
@@ -85,7 +27,6 @@ html {
 body {
   display: grid;
   gap: 125px;
-
   justify-items: center;
 }
 
@@ -98,16 +39,16 @@ header {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-
   height: 80px;
   background: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: 'Inter';
+  font-weight: 700;
 }
 
 .nav-bar__img {
   flex: 1 2 15%;
   margin: 18px 30px;
-  /*background-image: url("images/logo.png");*/
   width: 220px;
   height: 50px;
   object-fit: cover;
@@ -115,9 +56,7 @@ header {
 
 .nav-bar__header {
   flex: 1 2 55%;
-  font-family: "Inter";
   font-size: 36px;
-  font-weight: 700;
   color: var(--all-color);
 }
 
@@ -125,133 +64,38 @@ header {
   display: flex;
   justify-content: space-around;
   flex: 0 2 20%;
-  font-family: "Inter";
   text-align: center;
   font-size: 24px;
-  font-weight: 700;
   color: var(--all-color);
 }
 
-.nav-bar__registration:visited {
+.nav-bar__link-registration {
+  text-decoration: none;
   color: var(--font-actin);
 }
 
-.nav-bar__link-enter:visited {
-  color: var(--font-actin);
-}
-
-.form-enter {
-
-  display: grid;
-  justify-self: center;
-  gap: 10px;
-  width: 600px;
-  height: 383px;
-
-  padding: 10px 45px 20px;
-  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-  background: white;
-}
-
-.enter-header {
-
-  align-self: center;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 50px;
-  font-weight: 700;
-  color: var(--all-color);
-
-}
-
-.enter-email {
-  align-self: center;
-
-}
-
-.enter-email__title {
-  padding-left: 8px;
-  padding-bottom: 4px;
-  font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--all-color);
-  user-select: none;
-}
-
-.enter-email__input {
-  width: 510px;
-  height: 49px;
-  padding-left: 15px;
-  border: 2px solid var(--all-color);
-  font-family: 'Roboto';
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--all-color);
-}
-
-.enter-email__input::placeholder {
-  font-family: 'Roboto';
-  font-size: 28px;
-  font-weight: bold;
-  color: #cccccc;
-}
-
-.enter-password {
-
-
-  align-self: center;
-}
-
-.enter-password__title {
-  padding-left: 8px;
-  padding-bottom: 4px;
-  font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--all-color);
-  user-select: none;
-}
-
-.enter-password__input {
-  width: 510px;
-  height: 49px;
-  padding-left: 15px;
-  border: 2px solid var(--all-color);
-  font-family: 'Roboto';
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--all-color);
-}
-.enter-password__input::placeholder {
-  font-family: 'Roboto';
-  font-size: 28px;
-  font-weight: bold;
-  color: #cccccc;
+.nav-bar__link-enter {
+  text-decoration: none;
+  color: var(--all-color)
 }
 
 .form-registration {
-
   display: grid;
   justify-self: center;
   gap: 10px;
-  top: 125px;
   width: 600px;
-  height: 875px;
-
-  padding: 22px 45px 37px;
+  padding: 19px 45px 37px;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   background: white;
+  font-family: 'Roboto';
+  font-weight: bold;
 }
 
 
 .registration-header {
-
   align-self: center;
   text-align: center;
-  font-family: 'Roboto';
   font-size: 50px;
-  font-weight: 700;
   color: var(--all-color);
 
 }
@@ -262,10 +106,8 @@ header {
 }
 
 .registration-email__title {
-  padding-bottom: 4px;
-  font-family: "Roboto";
+  padding-bottom: 3px;
   font-size: 16px;
-  font-weight: bold;
   color: var(--all-color);
   user-select: none;
 }
@@ -275,31 +117,25 @@ header {
   height: 49px;
   padding-left: 15px;
   border: 2px solid var(--all-color);
-  font-family: "Roboto";
   font-size: 28px;
   font-weight: bold;
   color: var(--all-color);
 }
 
 .registration-email__input::placeholder {
-  font-family: 'Roboto';
   font-size: 28px;
   font-weight: bold;
   color: #cccccc;
 }
 
 .registration-password {
-
   align-self: center;
 }
 
 .registration-password__title {
-  padding-bottom: 4px;
-  font-family: 'Roboto';
+  padding-bottom: 3px;
   font-size: 16px;
-  font-weight: bold;
   color: var(--all-color);
-
   user-select: none;
 }
 
@@ -308,41 +144,35 @@ header {
   height: 49px;
   padding-left: 15px;
   border: 2px solid var(--all-color);
-  font-family: 'Roboto';
   font-size: 28px;
-  font-weight: bold;
   color: var(--all-color);
 }
 
 .registration-password__input::placeholder {
-  font-family: 'Roboto';
   font-size: 28px;
   font-weight: bold;
   color: #cccccc;
 }
 
 .registration-sex__title {
-  margin: 8px 0 10px -2px;
-  font-family: "Roboto";
+  margin: 0px 0 6px -2px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--all-color);
 }
 
 .registration-sex__label {
-  font-family: "Roboto";
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
   color: var(--all-color);
   line-height: 0.9;
   display: grid;
-  grid-template-columns: 0px auto;
-  gap: 28px;
+  grid-template-columns: 10px auto;
+  gap: 20px;
 }
 
 .registration-sex__label + .registration-sex__label {
-  margin-top: 12px;
-
+  margin-top: 10px;
 }
 
 .registration-sex__input {
@@ -371,7 +201,6 @@ header {
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 10px 10px var(--all-color);
-
 }
 
 .registration-sex__input:checked::before {
@@ -381,14 +210,14 @@ header {
 .registration-info {
   width: 100%;
   height: 266px;
-  margin-bottom: 25px;
+  margin-top: -5px;
+  margin-bottom: 20px;
 }
 
 .registration-info__title {
   padding-bottom: 5px;
-  font-family: "Roboto";
   font-size: 16px;
-  font-weight: bold;
+
   color: var(--all-color);
 }
 
@@ -398,30 +227,26 @@ header {
   border: 2px solid var(--all-color);
   resize: none;
   padding-left: 15px;
-  font-family: "Roboto";
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--all-color);
 }
 
 .registration-info__about::placeholder {
-  font-family: "Roboto";
   font-size: 28px;
   font-weight: bold;
   color: #cccccc;
 }
 
-
 .registration-agreement {
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: normal;
   color: var(--all-color);
-  line-height: 1.4;
+  line-height: 1.5;
   display: grid;
   grid-template-columns: 0px auto;
   gap: 28px;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 .registration-agreement__input {
@@ -438,7 +263,6 @@ header {
 }
 
 .registration-agreement__input {
-
   display: grid;
   place-content: center;
 }
@@ -447,7 +271,6 @@ header {
   content: "";
   width: 12px;
   height: 12px;
-
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 10px 10px var(--all-color);
@@ -458,14 +281,12 @@ header {
   transform: scale(1);
 }
 
-
 .registration-button {
   align-self: center;
   text-align: center;
   width: 180px;
   height: 52px;
   background: var(--font-actin);
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
@@ -476,15 +297,4 @@ header {
   align-self: center;
   text-align: center;
 }
-.enter-button {
-  align-self: center;
 
-  width: 180px;
-  height: 52px;
-  background: var(--font-actin);
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  border: none;
-}
