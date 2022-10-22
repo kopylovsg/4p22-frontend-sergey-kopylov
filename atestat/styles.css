@@ -22,25 +22,26 @@ p {
 html {
   height: 100%;
   margin: 0 auto;
+  font-size: 10px;
 }
 
 body {
   display: grid;
-  gap: 125px;
+  gap: 10.2rem;
   justify-items: center;
-  padding-bottom: 125px;
+  padding-bottom: 12.5rem;
 }
 
 header {
   width: 100%;
-  max-width: 1440px;
+  max-width: 144rem;
 }
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 80px;
+  height: 8rem;
   background: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: 'Inter';
@@ -49,15 +50,15 @@ header {
 
 .nav-bar__img {
   flex: 1 2 15%;
-  margin: 18px 30px;
-  width: 220px;
-  height: 50px;
+  margin: 1.8rem 3rem;
+  width: 22rem;
+  height: 5rem;
   object-fit: cover;
 }
 
 .nav-bar__header {
   flex: 1 2 55%;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: var(--all-color);
 }
 
@@ -66,7 +67,7 @@ header {
   justify-content: space-around;
   flex: 0 2 20%;
   text-align: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: var(--all-color);
 }
 
@@ -83,9 +84,9 @@ header {
 .form-registration {
   display: grid;
   justify-self: center;
-  gap: 10px;
-  width: 600px;
-  padding: 19px 45px 37px;
+  gap: 1rem;
+  width: 60rem;
+  padding: 1.9rem 4.5rem 3.7rem;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   background: white;
   font-family: 'Roboto';
@@ -96,7 +97,7 @@ header {
 .registration-header {
   align-self: center;
   text-align: center;
-  font-size: 50px;
+  font-size: 5rem;
   color: var(--all-color);
 
 }
@@ -107,24 +108,24 @@ header {
 }
 
 .registration-email__title {
-  padding-bottom: 3px;
-  font-size: 16px;
+  padding-bottom: 0.3rem;
+  font-size: 1.6rem;
   color: var(--all-color);
   user-select: none;
 }
 
 .registration-email__input {
-  width: 510px;
-  height: 49px;
-  padding-left: 15px;
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
   border: 2px solid var(--all-color);
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: var(--all-color);
 }
 
 .registration-email__input::placeholder {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
@@ -134,46 +135,46 @@ header {
 }
 
 .registration-password__title {
-  padding-bottom: 3px;
-  font-size: 16px;
+  padding-bottom: 0.3rem;
+  font-size: 1.6rem;
   color: var(--all-color);
   user-select: none;
 }
 
 .registration-password__input {
-  width: 510px;
-  height: 49px;
-  padding-left: 15px;
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
   border: 2px solid var(--all-color);
-  font-size: 28px;
+  font-size: 2.8rem;
   color: var(--all-color);
 }
 
 .registration-password__input::placeholder {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
 
 .registration-sex__title {
-  margin: 0px 0 6px -2px;
-  font-size: 16px;
+  margin: 0 0 0.6rem -0.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--all-color);
 }
 
 .registration-sex__label {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: normal;
   color: var(--all-color);
   line-height: 0.9;
   display: grid;
-  grid-template-columns: 10px auto;
-  gap: 20px;
+  grid-template-columns: 1rem auto;
+  gap: 2rem;
 }
 
 .registration-sex__label + .registration-sex__label {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .registration-sex__input {
@@ -182,11 +183,11 @@ header {
   margin: 0;
   font: inherit;
   color: var(--all-color);
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border: 2px solid var(--all-color);
   border-radius: 50%;
-  transform: translateY(-4px);
+  transform: translateY(-0.4rem);
 }
 
 .registration-sex__input {
@@ -196,12 +197,12 @@ header {
 
 .registration-sex__input::before {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   transform: scale(0);
   transition: 220ms transform ease-in-out;
-  box-shadow: inset 10px 10px var(--all-color);
+  box-shadow: inset 1rem 1rem var(--all-color);
 }
 
 .registration-sex__input:checked::before {
@@ -210,44 +211,45 @@ header {
 
 .registration-info {
   width: 100%;
-  height: 266px;
-  margin-top: -5px;
-  margin-bottom: 20px;
+  height: 26.6rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
 }
 
 .registration-info__title {
-  padding-bottom: 5px;
-  font-size: 16px;
+  padding-bottom: 0.5rem;
+  font-size: 1.6rem;
 
   color: var(--all-color);
 }
 
 .registration-info__about {
   width: 100%;
-  height: 246px;
+  height: 24.6rem;
   border: 2px solid var(--all-color);
   resize: none;
-  padding-left: 15px;
-  font-size: 28px;
+  padding-left: 1.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--all-color);
 }
 
 .registration-info__about::placeholder {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
 
 .registration-agreement {
-  font-size: 14px;
+  display: grid;
+  grid-template-columns: 0px auto;
+  gap: 2.8rem;
+  margin-bottom: 4.5rem;
+  font-size: 1.4rem;
   font-weight: normal;
   color: var(--all-color);
   line-height: 1.5;
-  display: grid;
-  grid-template-columns: 0px auto;
-  gap: 28px;
-  margin-bottom: 45px;
+
 }
 
 .registration-agreement__input {
@@ -256,8 +258,8 @@ header {
   margin: 0;
   font: inherit;
   color: var(--all-color);
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border: 2px solid var(--all-color);
 }
 
@@ -268,11 +270,11 @@ header {
 
 .registration-agreement__input::before {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
   transform: scale(0);
   transition: 220ms transform ease-in-out;
-  box-shadow: inset 10px 10px var(--all-color);
+  box-shadow: inset 1rem 1rem var(--all-color);
 }
 
 .registration-agreement__input:checked::before {
@@ -282,17 +284,48 @@ header {
 .registration-button {
   align-self: center;
   text-align: center;
-  width: 180px;
-  height: 52px;
+  width: 18rem;
+  height: 5.2rem;
   background: var(--font-actin);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   color: #ffffff;
   border: none;
 }
 
-.enter {
+.registration-enter {
   align-self: center;
   text-align: center;
 }
 
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 0.694vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 1.302vw
+  }
+  body {
+    gap: 6.1rem;
+  }
+
+  .nav-bar__img {
+    width: 12rem;
+    height: 2.5rem;
+    }
+
+  .nav-bar__header {
+    font-size: 2.4rem;
+  }
+
+  .nav-bar__link {
+    font-size: 1.6rem;
+  }
+
+  header {
+    max-width: 76.8rem;
+  }
+}

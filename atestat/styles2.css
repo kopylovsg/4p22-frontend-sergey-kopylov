@@ -52,7 +52,7 @@ header {
 
 .nav-bar__img {
   flex: 1 2 15%;
-  margin: 1.242vw 2.07vw;
+  margin: 1.8rem 3rem;
   width: 22rem;
   height: 5rem;
   object-fit: cover;
@@ -187,106 +187,24 @@ header {
     font-size: 1.302vw
   }
 
+  body {
+    gap: 8rem;
+  }
+
+  .nav-bar__img {
+    width: 12rem;
+    height: 2.5rem;
+  }
+
+  .nav-bar__header {
+    font-size: 2.4rem;
+  }
+
+  .nav-bar__link {
+    font-size: 1.6rem;
+  }
+
+  header {
+    max-width: 76.8rem;
+  }
 }
-/*  body {*/
-/*    display: grid;*/
-/*    gap: calc(84*var(--768));*/
-/*    justify-items: center;*/
-/*  }*/
-
-/*  header {*/
-/*    width: 100%;*/
-/*    max-width: 768px;*/
-/*  }*/
-
-/*  .nav-bar {*/
-
-/*    height: calc(80*var(--768));*/
-
-/*  }*/
-
-/*  .nav-bar__img {*/
-
-/*    margin: 2.34vw 3.9vw;*/
-/*    width: calc(220*var(--768));*/
-/*    height: calc(50*var(--768));*/
-
-/*  }*/
-
-/*  .nav-bar__header {*/
-
-/*    font-size: calc(36*var(--768));*/
-
-/*  }*/
-
-/*  .nav-bar__link {*/
-
-/*    font-size: calc(24*var(--768));*/
-
-/*  }*/
-
-
-/*  .form-enter {*/
-/*    gap: calc(10*var(--768));*/
-/*    width: calc(600*var(--768));*/
-/*    padding: 2.6vw 5.85vw 4.55vw;*/
-
-/*  }*/
-
-/*  .enter-header {*/
-/*    font-size: calc(50*var(--768));*/
-
-/*  }*/
-
-
-/*  .enter-email__title {*/
-/*    padding-left: calc(8*var(--768));*/
-/*    padding-bottom: calc(4*var(--768));*/
-/*    font-size: calc(16*var(--768));*/
-
-/*  }*/
-
-/*  .enter-email__input {*/
-/*    width: calc(510*var(--768));*/
-/*    height: calc(49*var(--768));*/
-/*    padding-left: calc(15*var(--768));*/
-/*    font-size: calc(28*var(--768));*/
-
-/*  }*/
-
-/*  .enter-email__input::placeholder {*/
-/*    font-size: calc(28*var(--768));*/
-
-/*  }*/
-
-/*  .enter-password {*/
-/*    padding-bottom: calc(40*var(--768));*/
-/*  }*/
-
-/*  .enter-password__title {*/
-/*    padding-left: calc(8*var(--768));*/
-/*    padding-bottom: calc(4*var(--768));*/
-/*    font-size: calc(16*var(--768));*/
-
-/*  }*/
-
-/*  .enter-password__input {*/
-/*    width: calc(510*var(--768));*/
-/*    height: calc(49*var(--768));*/
-/*    padding-left: calc(15*var(--768));*/
-/*    font-size: calc(28*var(--768));*/
-
-/*  }*/
-
-/*  .enter-password__input::placeholder {*/
-/*    font-size: calc(28*var(--768));*/
-
-/*  }*/
-
-
-/*  .enter-button {*/
-/*    align-self: center;*/
-/*    width: calc(180*var(--768));*/
-/*    height: calc(52*var(--768));*/
-/*       font-size: calc(24*var(--768));*/
-/*}*/
