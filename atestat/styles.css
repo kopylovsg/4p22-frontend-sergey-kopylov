@@ -28,6 +28,7 @@ body {
   display: grid;
   gap: 125px;
   justify-items: center;
+  padding-bottom: 125px;
 }
 
 header {
@@ -199,7 +200,7 @@ header {
   height: 12px;
   border-radius: 50%;
   transform: scale(0);
-  transition: 120ms transform ease-in-out;
+  transition: 220ms transform ease-in-out;
   box-shadow: inset 10px 10px var(--all-color);
 }
 
@@ -258,8 +259,6 @@ header {
   width: 20px;
   height: 20px;
   border: 2px solid var(--all-color);
-
-  /*transform: translateY(-4px);*/
 }
 
 .registration-agreement__input {
@@ -272,9 +271,8 @@ header {
   width: 12px;
   height: 12px;
   transform: scale(0);
-  transition: 120ms transform ease-in-out;
+  transition: 220ms transform ease-in-out;
   box-shadow: inset 10px 10px var(--all-color);
-
 }
 
 .registration-agreement__input:checked::before {

@@ -17,18 +17,18 @@ p {
 :root {
   --all-color: #787878;
   --font-actin: #1A226B;
-  --1440: 100vw/1440;
-  --768: 100vw/768;
+
 }
 
 html {
   height: 100%;
   margin: 0 auto;
+  font-size: 10px;
 }
 
 body {
   display: grid;
-  gap: calc(125*var(--1440));
+  gap: 12.5rem;
   justify-items: center;
 }
 
@@ -42,24 +42,27 @@ header {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: calc(80*var(--1440));
+  height: 8rem;
   background: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: 'Inter';
-  font-weight: 700;
+  font-weight: bold;
+
 }
 
 .nav-bar__img {
   flex: 1 2 15%;
   margin: 1.242vw 2.07vw;
-  width: calc(220*var(--1440));
-  height: calc(50*var(--1440));
+  width: 22rem;
+  height: 5rem;
   object-fit: cover;
 }
 
 .nav-bar__header {
   flex: 1 2 55%;
-  font-size: calc(36*var(--1440));
+  font-size: 3.6rem;
+  font-family: 'Inter';
+  font-weight: bold;
   color: var(--all-color);
 }
 
@@ -68,7 +71,7 @@ header {
   justify-content: space-around;
   flex: 0 2 20%;
   text-align: center;
-  font-size: calc(24*var(--1440));
+  font-size: 2.4rem;
   color: var(--all-color);
 }
 
@@ -85,9 +88,9 @@ header {
 .form-enter {
   display: grid;
   justify-self: center;
-  gap: calc(10*var(--1440));
-  width: calc(600*var(--1440));
-  padding: 1.38vw 3.105vw 2.415vw;
+  gap: 1rem;
+  width: 60rem;
+  padding: 2rem 4.5rem 3.5rem;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   background: white;
   font-family: 'Roboto';
@@ -97,7 +100,7 @@ header {
 .enter-header {
   align-self: center;
   text-align: center;
-  font-size: calc(50*var(--1440));
+  font-size: 5rem;
   color: var(--all-color);
 }
 
@@ -106,53 +109,53 @@ header {
 }
 
 .enter-email__title {
-  padding-left: calc(8*var(--1440));
-  padding-bottom: calc(4*var(--1440));
-  font-size: calc(16*var(--1440));
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.6rem;
   color: var(--all-color);
   user-select: none;
 }
 
 .enter-email__input {
-  width: calc(510*var(--1440));
-  height: calc(49*var(--1440));
-  padding-left: calc(15*var(--1440));
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
   border: 2px solid var(--all-color);
-  font-size: calc(28*var(--1440));
+  font-size: 2.8rem;
   font-weight: bold;
   color: var(--all-color);
 }
 
 .enter-email__input::placeholder {
-  font-size: calc(28*var(--1440));
+  font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
 
 .enter-password {
   align-self: center;
-  padding-bottom: calc(40*var(--1440));
+  padding-bottom: 4rem;
 }
 
 .enter-password__title {
-  padding-left: calc(8*var(--1440));
-  padding-bottom: calc(4*var(--1440));
-  font-size: calc(16*var(--1440));
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.6rem;
   color: var(--all-color);
   user-select: none;
 }
 
 .enter-password__input {
-  width: calc(510*var(--1440));
-  height: calc(49*var(--1440));
-  padding-left: calc(15*var(--1440));
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
   border: 2px solid var(--all-color);
-  font-size: calc(28*var(--1440));
+  font-size: 2.8rem;
   color: var(--all-color);
 }
 
 .enter-password__input::placeholder {
-  font-size: calc(28*var(--1440));
+  font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
@@ -164,115 +167,126 @@ header {
 }
 .enter-button {
   align-self: center;
-  width: calc(180*var(--1440));
-  height: calc(52*var(--1440));
+  width: 18rem;
+  height: 5.2rem;
   background: var(--font-actin);
-  font-size: calc(24*var(--1440));
+  font-size: 2.4rem;
   font-weight: bold;
   color: #ffffff;
   border: none;
 }
 
-@media screen and (max-width: 769px) {
-  body {
-    display: grid;
-    gap: calc(84*var(--768));
-    justify-items: center;
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 0.694vw;
   }
-
-  header {
-    width: 100%;
-    max-width: 768px;
-  }
-
-  .nav-bar {
-
-    height: calc(80*var(--768));
-
-  }
-
-  .nav-bar__img {
-
-    margin: 2.34vw 3.9vw;
-    width: calc(220*var(--768));
-    height: calc(50*var(--768));
-
-  }
-
-  .nav-bar__header {
-
-    font-size: calc(36*var(--768));
-
-  }
-
-  .nav-bar__link {
-
-    font-size: calc(24*var(--768));
-
-  }
-
-
-  .form-enter {
-    gap: calc(10*var(--768));
-    width: calc(600*var(--768));
-    padding: 2.6vw 5.85vw 4.55vw;
-
-  }
-
-  .enter-header {
-    font-size: calc(50*var(--768));
-
-  }
-
-
-  .enter-email__title {
-    padding-left: calc(8*var(--768));
-    padding-bottom: calc(4*var(--768));
-    font-size: calc(16*var(--768));
-
-  }
-
-  .enter-email__input {
-    width: calc(510*var(--768));
-    height: calc(49*var(--768));
-    padding-left: calc(15*var(--768));
-    font-size: calc(28*var(--768));
-
-  }
-
-  .enter-email__input::placeholder {
-    font-size: calc(28*var(--768));
-
-  }
-
-  .enter-password {
-    padding-bottom: calc(40*var(--768));
-  }
-
-  .enter-password__title {
-    padding-left: calc(8*var(--768));
-    padding-bottom: calc(4*var(--768));
-    font-size: calc(16*var(--768));
-
-  }
-
-  .enter-password__input {
-    width: calc(510*var(--768));
-    height: calc(49*var(--768));
-    padding-left: calc(15*var(--768));
-    font-size: calc(28*var(--768));
-
-  }
-
-  .enter-password__input::placeholder {
-    font-size: calc(28*var(--768));
-
-  }
-
-
-  .enter-button {
-    align-self: center;
-    width: calc(180*var(--768));
-    height: calc(52*var(--768));
-       font-size: calc(24*var(--768));
 }
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 1.302vw
+  }
+
+}
+/*  body {*/
+/*    display: grid;*/
+/*    gap: calc(84*var(--768));*/
+/*    justify-items: center;*/
+/*  }*/
+
+/*  header {*/
+/*    width: 100%;*/
+/*    max-width: 768px;*/
+/*  }*/
+
+/*  .nav-bar {*/
+
+/*    height: calc(80*var(--768));*/
+
+/*  }*/
+
+/*  .nav-bar__img {*/
+
+/*    margin: 2.34vw 3.9vw;*/
+/*    width: calc(220*var(--768));*/
+/*    height: calc(50*var(--768));*/
+
+/*  }*/
+
+/*  .nav-bar__header {*/
+
+/*    font-size: calc(36*var(--768));*/
+
+/*  }*/
+
+/*  .nav-bar__link {*/
+
+/*    font-size: calc(24*var(--768));*/
+
+/*  }*/
+
+
+/*  .form-enter {*/
+/*    gap: calc(10*var(--768));*/
+/*    width: calc(600*var(--768));*/
+/*    padding: 2.6vw 5.85vw 4.55vw;*/
+
+/*  }*/
+
+/*  .enter-header {*/
+/*    font-size: calc(50*var(--768));*/
+
+/*  }*/
+
+
+/*  .enter-email__title {*/
+/*    padding-left: calc(8*var(--768));*/
+/*    padding-bottom: calc(4*var(--768));*/
+/*    font-size: calc(16*var(--768));*/
+
+/*  }*/
+
+/*  .enter-email__input {*/
+/*    width: calc(510*var(--768));*/
+/*    height: calc(49*var(--768));*/
+/*    padding-left: calc(15*var(--768));*/
+/*    font-size: calc(28*var(--768));*/
+
+/*  }*/
+
+/*  .enter-email__input::placeholder {*/
+/*    font-size: calc(28*var(--768));*/
+
+/*  }*/
+
+/*  .enter-password {*/
+/*    padding-bottom: calc(40*var(--768));*/
+/*  }*/
+
+/*  .enter-password__title {*/
+/*    padding-left: calc(8*var(--768));*/
+/*    padding-bottom: calc(4*var(--768));*/
+/*    font-size: calc(16*var(--768));*/
+
+/*  }*/
+
+/*  .enter-password__input {*/
+/*    width: calc(510*var(--768));*/
+/*    height: calc(49*var(--768));*/
+/*    padding-left: calc(15*var(--768));*/
+/*    font-size: calc(28*var(--768));*/
+
+/*  }*/
+
+/*  .enter-password__input::placeholder {*/
+/*    font-size: calc(28*var(--768));*/
+
+/*  }*/
+
+
+/*  .enter-button {*/
+/*    align-self: center;*/
+/*    width: calc(180*var(--768));*/
+/*    height: calc(52*var(--768));*/
+/*       font-size: calc(24*var(--768));*/
+/*}*/
