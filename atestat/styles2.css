@@ -166,12 +166,11 @@ header {
   color: #cccccc;
 }
 
-.enter {
-  align-self: center;
+.enter-button {
   text-align: center;
 
 }
-.enter-button {
+.button {
   align-self: center;
   width: 18rem;
   height: 5.2rem;
@@ -183,7 +182,7 @@ header {
   cursor: pointer;
 }
 
-.enter-button:focus {
+.button:focus {
   background: #0b76ef;
 }
 

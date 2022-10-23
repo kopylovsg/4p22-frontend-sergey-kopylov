@@ -299,8 +299,11 @@ header {
 }
 
 .registration-button {
-  align-self: center;
   text-align: center;
+}
+
+.button {
+  align-self: center;
   width: 18rem;
   height: 5.2rem;
   font-size: 2.4rem;
@@ -311,13 +314,8 @@ header {
   cursor: pointer;
 }
 
-.registration-button:focus {
+.button:focus {
   background: #0b76ef;
-}
-
-.registration-enter {
-  align-self: center;
-  text-align: center;
 }
 
 @media screen and (max-width: 1439px) {
