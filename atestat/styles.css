@@ -41,17 +41,17 @@ header {
   justify-content: space-evenly;
   width: 100%;
   height: 8rem;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: 'Inter';
   font-weight: 700;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .nav-bar__img {
   flex: 1 2 15%;
-  margin: 1.8rem 3rem;
   width: 22rem;
   height: 5rem;
+  margin: 1.8rem 3rem;
   object-fit: cover;
 }
 
@@ -96,11 +96,11 @@ header {
   gap: 1rem;
   width: 60rem;
   padding: 1.9rem 4.5rem 3.7rem;
-  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
-  background: white;
   font-family: 'Roboto';
   font-weight: bold;
-}
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+ }
 
 
 .registration-header {
@@ -127,9 +127,9 @@ header {
   width: 51rem;
   height: 4.9rem;
   padding-left: 1.5rem;
-  border: 2px solid var(--all-color);
   font-size: 2.8rem;
   font-weight: bold;
+  border: 2px solid var(--all-color);
   color: var(--all-color);
 }
 
@@ -154,8 +154,8 @@ header {
   width: 51rem;
   height: 4.9rem;
   padding-left: 1.5rem;
-  border: 2px solid var(--all-color);
   font-size: 2.8rem;
+  border: 2px solid var(--all-color);
   color: var(--all-color);
 }
 
@@ -173,14 +173,14 @@ header {
 }
 
 .registration-sex__label {
-  font-size: 1.4rem;
-  font-weight: normal;
-  color: var(--all-color);
-  line-height: 2.0rem;
   display: grid;
   grid-template-columns: 1rem auto;
   gap: 2rem;
   margin-top: -0.4rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--all-color);
+  line-height: 2.0rem;
 }
 
 .registration-sex__label + .registration-sex__label {
@@ -188,12 +188,12 @@ header {
 }
 
 .registration-sex__input {
+  width: 2rem;
+  height: 2rem;
   appearance: none;
   background-color: #fff;
   font: inherit;
   color: var(--all-color);
-  width: 2rem;
-  height: 2rem;
   border: 2px solid var(--all-color);
   border-radius: 50%;
 
@@ -239,12 +239,12 @@ header {
 .registration-info__about {
   width: 100%;
   height: 24.6rem;
-  border: 2px solid var(--all-color);
-  resize: none;
   padding-left: 1.5rem;
+  border: 2px solid var(--all-color);
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--all-color);
+  resize: none;
 }
 
 .registration-info__about::placeholder {
@@ -266,14 +266,13 @@ header {
 }
 
 .registration-agreement__input {
-  appearance: none;
-  background-color: #fff;
-  margin: 0;
-  font: inherit;
-  color: var(--all-color);
   width: 2rem;
   height: 2rem;
+  background-color: #fff;
+  font: inherit;
+  color: var(--all-color);
   border: 2px solid var(--all-color);
+  appearance: none;
 }
 
 .registration-agreement__input {
@@ -304,9 +303,9 @@ header {
   text-align: center;
   width: 18rem;
   height: 5.2rem;
-  background: var(--font-actin);
   font-size: 2.4rem;
   font-weight: bold;
+  background: var(--font-actin);
   color: #ffffff;
   border: none;
   cursor: pointer;
