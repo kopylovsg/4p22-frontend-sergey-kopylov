@@ -71,6 +71,7 @@ header {
 }
 
 .nav-bar__link-registration {
+  margin: 0 1rem 0 1rem;
   text-decoration: none;
   color: var(--font-actin);
 }
@@ -80,6 +81,7 @@ header {
 }
 
 .nav-bar__link-enter {
+  margin: 0 1rem 0 1rem;
   text-decoration: none;
   color: var(--all-color)
 }
