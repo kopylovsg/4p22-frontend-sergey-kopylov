@@ -76,9 +76,17 @@ header {
   color: var(--font-actin);
 }
 
+.nav-bar__link-registration:focus {
+  border: 1px dashed #0b76ef;
+}
+
 .nav-bar__link-enter {
   text-decoration: none;
   color: var(--all-color)
+}
+
+.nav-bar__link-enter:focus {
+  border: 1px dashed #0b76ef;
 }
 
 .form-registration {
@@ -87,7 +95,7 @@ header {
   gap: 1rem;
   width: 60rem;
   padding: 1.9rem 4.5rem 3.7rem;
-  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
   background: white;
   font-family: 'Roboto';
   font-weight: bold;
@@ -167,10 +175,11 @@ header {
   font-size: 1.4rem;
   font-weight: normal;
   color: var(--all-color);
-  line-height: 0.9;
+  line-height: 2.0rem;
   display: grid;
   grid-template-columns: 1rem auto;
   gap: 2rem;
+  margin-top: -0.4rem;
 }
 
 .registration-sex__label + .registration-sex__label {
@@ -180,25 +189,28 @@ header {
 .registration-sex__input {
   appearance: none;
   background-color: #fff;
-  margin: 0;
   font: inherit;
   color: var(--all-color);
   width: 2rem;
   height: 2rem;
   border: 2px solid var(--all-color);
   border-radius: 50%;
-  transform: translateY(-0.4rem);
+
 }
 
 .registration-sex__input {
   display: grid;
   place-content: center;
+  cursor: pointer;
+}
+.registration-sex__input:focus {
+  border: 1px solid #0b76ef;
 }
 
 .registration-sex__input::before {
   content: "";
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.0rem;
+  height: 1.0rem;
   border-radius: 50%;
   transform: scale(0);
   transition: 220ms transform ease-in-out;
@@ -266,6 +278,11 @@ header {
 .registration-agreement__input {
   display: grid;
   place-content: center;
+  cursor: pointer;
+}
+
+.registration-agreement__input:focus {
+  border: 1px solid #0b76ef;
 }
 
 .registration-agreement__input::before {
@@ -291,6 +308,11 @@ header {
   font-weight: bold;
   color: #ffffff;
   border: none;
+  cursor: pointer;
+}
+
+.registration-button:focus {
+  background: #0b76ef;
 }
 
 .registration-enter {
