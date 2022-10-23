@@ -1,6 +1,5 @@
 *,
-*:before,
-*:after {
+*:before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -80,9 +79,17 @@ header {
   color: var(--all-color)
 }
 
+.nav-bar__link-registration:focus {
+  border: 1px dashed #0b76ef;
+}
+
 .nav-bar__link-enter {
   text-decoration: none;
   color: var(--font-actin);
+}
+
+.nav-bar__link-enter:focus {
+  border: 1px dashed #0b76ef;
 }
 
 .form-enter {
