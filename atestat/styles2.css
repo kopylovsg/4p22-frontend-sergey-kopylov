@@ -81,17 +81,17 @@ header {
   border: 1px dashed #0b76ef;
 }
 
-.nav-bar__link-enter {
+.nav-bar__link-authorization {
   margin: 0 1rem 0 1rem;
   text-decoration: none;
   color: var(--font-actin);
 }
 
-.nav-bar__link-enter:focus {
+.nav-bar__link-authorization:focus {
   border: 1px dashed #0b76ef;
 }
 
-.form-enter {
+.form-authorization {
   display: grid;
   justify-self: center;
   gap: 1rem;
@@ -103,18 +103,18 @@ header {
   background: white;
 }
 
-.enter-header {
+.authorization-header {
   align-self: center;
   text-align: center;
   font-size: 5rem;
   color: var(--all-color);
 }
 
-.enter-email {
+.authorization-email {
   align-self: center;
 }
 
-.enter-email__title {
+.authorization-email__title {
   padding-left: 0.8rem;
   padding-bottom: 0.4rem;
   font-size: 1.6rem;
@@ -122,7 +122,7 @@ header {
   user-select: none;
 }
 
-.enter-email__input {
+.authorization-email__input {
   width: 51rem;
   height: 4.9rem;
   padding-left: 1.5rem;
@@ -132,18 +132,18 @@ header {
   color: var(--all-color);
 }
 
-.enter-email__input::placeholder {
+.authorization-email__input::placeholder {
   font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
 
-.enter-password {
+.authorization-password {
   align-self: center;
   padding-bottom: 4rem;
 }
 
-.enter-password__title {
+.authorization-password__title {
   padding-left: 0.8rem;
   padding-bottom: 0.4rem;
   font-size: 1.6rem;
@@ -151,7 +151,7 @@ header {
   user-select: none;
 }
 
-.enter-password__input {
+.authorization-password__input {
   width: 51rem;
   height: 4.9rem;
   padding-left: 1.5rem;
@@ -160,13 +160,13 @@ header {
   color: var(--all-color);
 }
 
-.enter-password__input::placeholder {
+.authorization-password__input::placeholder {
   font-size: 2.8rem;
   font-weight: bold;
   color: #cccccc;
 }
 
-.enter-button {
+.authorization-button {
   text-align: center;
 
 }

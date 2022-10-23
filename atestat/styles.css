@@ -80,13 +80,13 @@ header {
   border: 1px dashed #0b76ef;
 }
 
-.nav-bar__link-enter {
+.nav-bar__link-authorization {
   margin: 0 1rem 0 1rem;
   text-decoration: none;
   color: var(--all-color)
 }
 
-.nav-bar__link-enter:focus {
+.nav-bar__link-authorization:focus {
   border: 1px dashed #0b76ef;
 }
 
