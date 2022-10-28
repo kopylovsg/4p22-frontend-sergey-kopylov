@@ -8,33 +8,39 @@ let resultErorr = document.getElementById("resultErorr");
 
 function func() {
 
-  let numberOne = oneNumberNode.value.trim();
-  let numberTwo = twoNumberNode.value.trim();
+  let numberOneStr = oneNumberNode.value.trim();
+  let numberTwoStr = twoNumberNode.value.trim();
   let operator = operatorNode.value.trim();
 
-  console.log(numberOne);
-  console.log(numberTwo);
 
 
-  let isNumberOneEmpty = numberOne === '';
+
+
+
+  let isNumberOneEmpty = numberOneStr === '';
   if (isNumberOneEmpty) {
     alert ('нет 1го операнда');
     return;
   }
 
-  let isNumberOneInValid = isNaN(numberOne);
-  let isNumberTwoInValid = isNaN(numberTwo);
-  let  isNumberInValid = isNumberOneInValid || isNumberTwoInValid
-  if (isNumberInValid) {
-    alert ('числа(о) не корректные(ое)');
+  let isNumberOneInValid = isNaN(numberOneStr);
+  if (isNumberOneInValid) {
+    alert ('операнд 1 не корректен');
     return;
   }
 
-  let isNumberTwoEmpty = numberTwo === '';
+  let isNumberTwoEmpty = numberTwoStr === '';
   if (isNumberTwoEmpty) {
     alert ('нет 2го операнда');
     return;
   }
+
+  let isNumberTwoInValid = isNaN(numberTwoStr);
+  if (isNumberTwoInValid) {
+    alert ('операнд 2 не корректен');
+    return;
+  }
+
 
     let operatorEmpty = operator === '';
   if (operatorEmpty) {
@@ -53,13 +59,15 @@ function func() {
     return;
   }
 
- console.log(numberOne);
-  console.log(numberTwo);
+  let numberOne = Number(numberOneStr);
+  let numberTwo = Number(numberTwoStr);
 
+  console.log(numberOne);
+  console.log(numberTwo);
 
   switch (operator) {
     case '+':
-      result = Number(numberOne) + Number(numberTwo);
+      result = numberOne + numberTwo;
       break;
     case '-':
       result = numberOne - numberTwo;
@@ -77,7 +85,6 @@ function func() {
     break;
 
   }
-
 
   document.getElementById("result").innerHTML = result;
 }
