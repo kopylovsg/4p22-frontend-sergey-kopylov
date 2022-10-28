@@ -72,10 +72,11 @@ function func() {
       result = numberOne * numberTwo;
       break;
     case '/':
-      if (numberTwo) {
+      if (numberTwo === 0) {
         result = numberOne / numberTwo;
       } else {
-        alert('Операция некорректна');
+        alert('На ноль делить нельзя');
+        return;
       }
       break;
     default:
