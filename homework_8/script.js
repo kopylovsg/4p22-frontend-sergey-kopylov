@@ -16,34 +16,30 @@ function func() {
   console.log(numberTwo);
 
 
-  let numberOneVacant = numberOne === ''
-  if (numberOneVacant)
-  {
-    alert ('нет 1го');
-    return
-  }
-
-  let numberTwoVacant = numberTwo === ''
-  if (numberTwoVacant)
-  {
-    alert ('нет 2го');
-    return
+  let isNumberOneEmpty = numberOne === '';
+  if (isNumberOneEmpty) {
+    alert ('нет 1го операнда');
+    return;
   }
 
   let isNumberOneInValid = isNaN(numberOne);
   let isNumberTwoInValid = isNaN(numberTwo);
   let  isNumberInValid = isNumberOneInValid || isNumberTwoInValid
-  if (isNumberInValid)
-  {
-    alert ('числа не корректные');
-    return
+  if (isNumberInValid) {
+    alert ('числа(о) не корректные(ое)');
+    return;
   }
 
-  let operatorVacant = operator === ''
-  if (operatorVacant)
-  {
+  let isNumberTwoEmpty = numberTwo === '';
+  if (isNumberTwoEmpty) {
+    alert ('нет 2го операнда');
+    return;
+  }
+
+    let operatorEmpty = operator === '';
+  if (operatorEmpty) {
     alert('нет знака')
-    return
+    return;
   }
 
   let isOperation =
@@ -53,8 +49,8 @@ function func() {
     (operator === '-')
   if (!isOperation)
   {
-    alert('знак не верный')
-    return
+    alert('знак не верный');
+    return;
   }
 
  console.log(numberOne);
@@ -73,14 +69,13 @@ function func() {
       break;
     case '/':
       if (numberTwo === 0) {
-        result = numberOne / numberTwo;
-      } else {
         alert('На ноль делить нельзя');
         return;
+      } else {
+        result = numberOne / numberTwo;
       }
-      break;
-    default:
-      alert('Программа не поддерживает такую операцию');
+    break;
+
   }
 
 
