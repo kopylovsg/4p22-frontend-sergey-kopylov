@@ -19,14 +19,14 @@ function func() {
   let numberOneVacant = numberOne === ''
   if (numberOneVacant)
   {
-    alert('нет 1го')
+    alert ('нет 1го');
     return
   }
 
   let numberTwoVacant = numberTwo === ''
   if (numberTwoVacant)
   {
-    alert('нет 2го')
+    alert ('нет 2го');
     return
   }
 
@@ -35,7 +35,7 @@ function func() {
   let  isNumberInValid = isNumberOneInValid || isNumberTwoInValid
   if (isNumberInValid)
   {
-    alert('числа не корректные')
+    alert ('числа не корректные');
     return
   }
 
@@ -54,7 +54,7 @@ function func() {
   if (!isOperation)
   {
     alert('знак не верный')
-    return;
+    return
   }
 
  console.log(numberOne);
@@ -75,11 +75,11 @@ function func() {
       if (numberTwo) {
         result = numberOne / numberTwo;
       } else {
-        resultErorr = 'Операция некорректна';
+        alert('Операция некорректна');
       }
       break;
     default:
-      resultErorr = 'Программа не поддерживает такую операцию';
+      alert('Программа не поддерживает такую операцию');
   }
 
 

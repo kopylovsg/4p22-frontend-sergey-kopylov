@@ -1,0 +1,15 @@
+.calc {
+  display: grid;
+  column-gap: normal;
+  gap: 20px;
+  height: 250px;
+  width: 200px;
+  align-self: center;
+  margin: 20px auto;
+  background: #80bdff;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
