@@ -45,6 +45,12 @@ function func() {
     errors.push('операнд 2 не корректен');
   }
 
+  if (operator === '/') {
+    if (numberTwo === 0) {
+      errors.push('на ноль делить нельзя');
+    }
+  }
+
   if (errors.length) {
     return alert(errors.join('\n'));
   } else {
@@ -59,12 +65,8 @@ function func() {
         result = numberOne * numberTwo;
         break;
       case '/':
-        if (numberTwo === 0) {
-          return alert('на ноль делить нельзя');
-        } else {
-          result = numberOne / numberTwo;
-          break;
-        }
+        result = numberOne / numberTwo;
+        break;
     }
   }
 
