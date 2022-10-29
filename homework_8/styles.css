@@ -2,10 +2,10 @@
   display: grid;
   column-gap: normal;
   gap: 20px;
-  height: 250px;
+  height: 300px;
   width: 200px;
   align-self: center;
-  margin: 20px auto;
+  margin: 40px auto;
   background: #80bdff;
   text-align: center;
 }

@@ -1,51 +1,44 @@
 'use strict'
 
-let oneNumberNode = document.getElementById("data-js-number1");
-let operatorNode = document.getElementById("data-js-operator")
-let twoNumberNode = document.getElementById("data-js-number2");
-let result = document.getElementById("result");
-let resultErorr = document.getElementById("resultErorr");
+const oneNumberNode = document.getElementById("data-js-number1");
+const operatorNode = document.getElementById("data-js-operator")
+const twoNumberNode = document.getElementById("data-js-number2");
 
 function func() {
+  document.getElementById("result").innerHTML = '';
+  let result;
+  const errors = [];
+  const numberOneStr = oneNumberNode.value.trim();
+  const numberTwoStr = twoNumberNode.value.trim();
+  const operator = operatorNode.value.trim();
 
-  let numberOneStr = oneNumberNode.value.trim();
-  let numberTwoStr = twoNumberNode.value.trim();
-  let operator = operatorNode.value.trim();
-
-
-
-
-
-
-  let isNumberOneEmpty = numberOneStr === '';
-  if (isNumberOneEmpty) {
-    alert ('нет 1го операнда');
-    return;
+  if (!numberOneStr.length) {
+    errors.push('нет 1го операнда');
   }
 
-  let isNumberOneInValid = isNaN(numberOneStr);
+  if (!numberTwoStr.length) {
+    errors.push('нет 2го операнда');
+  }
+
+  if (!operator.length) {
+    errors.push('нет оператора');
+  }
+
+  if (errors.length) {
+    return alert(errors.join('\n'));
+  }
+
+  const numberOne = Number(numberOneStr);
+  const numberTwo = Number(numberTwoStr);
+
+  const isNumberOneInValid = isNaN(numberOne);
   if (isNumberOneInValid) {
-    alert ('операнд 1 не корректен');
-    return;
+    errors.push('операнд 1 не корректен');
   }
 
-  let isNumberTwoEmpty = numberTwoStr === '';
-  if (isNumberTwoEmpty) {
-    alert ('нет 2го операнда');
-    return;
-  }
-
-  let isNumberTwoInValid = isNaN(numberTwoStr);
+  const isNumberTwoInValid = isNaN(numberTwo);
   if (isNumberTwoInValid) {
-    alert ('операнд 2 не корректен');
-    return;
-  }
-
-
-    let operatorEmpty = operator === '';
-  if (operatorEmpty) {
-    alert('нет знака')
-    return;
+    errors.push('операнд 2 не корректен');
   }
 
   let isOperation =
@@ -53,37 +46,31 @@ function func() {
     (operator === '/') ||
     (operator === '+') ||
     (operator === '-')
-  if (!isOperation)
-  {
-    alert('знак не верный');
-    return;
+  if (!isOperation) {
+    errors.push('оператор не верный');
   }
 
-  let numberOne = Number(numberOneStr);
-  let numberTwo = Number(numberTwoStr);
+  if(numberTwo === 0) {
+    errors.push('на ноль делить нельзя');
+  }
 
-  console.log(numberOne);
-  console.log(numberTwo);
-
-  switch (operator) {
-    case '+':
-      result = numberOne + numberTwo;
-      break;
-    case '-':
-      result = numberOne - numberTwo;
-      break;
-    case '*':
-      result = numberOne * numberTwo;
-      break;
-    case '/':
-      if (numberTwo === 0) {
-        alert('На ноль делить нельзя');
-        return;
-      } else {
-        result = numberOne / numberTwo;
-      }
-    break;
-
+  if (errors.length) {
+    return alert(errors.join('\n'));
+  } else {
+    switch (operator) {
+      case '+':
+        result = numberOne + numberTwo;
+        break;
+      case '-':
+        result = numberOne - numberTwo;
+        break;
+      case '*':
+        result = numberOne * numberTwo;
+        break;
+      case '/':
+         result = numberOne / numberTwo;
+        break;
+    }
   }
 
   document.getElementById("result").innerHTML = result;
