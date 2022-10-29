@@ -3,10 +3,9 @@
 const oneNumberNode = document.getElementById("data-js-number1");
 const operatorNode = document.getElementById("data-js-operator")
 const twoNumberNode = document.getElementById("data-js-number2");
+let result = document.getElementById("result");
 
 function func() {
-  document.getElementById("result").innerHTML = '';
-  let result;
   const errors = [];
   const numberOneStr = oneNumberNode.value.trim();
   const numberTwoStr = twoNumberNode.value.trim();
@@ -15,8 +14,6 @@ function func() {
   if (!numberOneStr.length) {
     errors.push('Первое число не указаано');
   }
-
-
 
   if (!operator.length) {
   errors.push('Не введён знак');
@@ -42,14 +39,9 @@ function func() {
     errors.push('Некорректный ввод чисел');
   }
 
-  if (operator === '/') {
-    if (numberTwo === 0) {
-      errors.push('Операция некорректна');
-    }
-  }
-
   if (errors.length) {
-    return alert(errors.join('\n'));
+    result.innerHTML = errors.join('\n');
+    return console.log(errors.join('\n'));
   } else {
     switch (operator) {
       case '+':
@@ -62,8 +54,13 @@ function func() {
         result = numberOne * numberTwo;
         break;
       case '/':
-        result = numberOne / numberTwo;
-        break;
+        if (numberTwo === 0) {
+          result.innerHTML = 'Операция некорректна';
+          return console.log('Операция некорректна');
+        } else {
+          result = numberOne / numberTwo;
+          break;
+        }
     }
   }
 
