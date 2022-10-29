@@ -3,9 +3,10 @@
 const oneNumberNode = document.getElementById("data-js-number1");
 const operatorNode = document.getElementById("data-js-operator")
 const twoNumberNode = document.getElementById("data-js-number2");
-let result = document.getElementById("result");
+
 
 function func() {
+  let result = document.getElementById("result");
   const errors = [];
   const numberOneStr = oneNumberNode.value.trim();
   const numberTwoStr = twoNumberNode.value.trim();
