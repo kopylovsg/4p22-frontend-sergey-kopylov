@@ -24,10 +24,6 @@ function func() {
     errors.push('нет оператора');
   }
 
-  if (errors.length) {
-    return alert(errors.join('\n'));
-  }
-
   const numberOne = Number(numberOneStr);
   const numberTwo = Number(numberTwoStr);
 
@@ -48,6 +44,10 @@ function func() {
     (operator === '-')
   if (!isOperation) {
     errors.push('оператор не верный');
+  }
+
+  if (errors.length) {
+    return alert(errors.join('\n'));
   }
 
   if(numberTwo === 0) {
