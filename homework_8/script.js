@@ -16,42 +16,33 @@ function func() {
     errors.push('нет 1го операнда');
   }
 
-  if (!numberTwoStr.length) {
-    errors.push('нет 2го операнда');
-  }
-
-  if (!operator.length) {
-    errors.push('нет оператора');
-  }
-
   const numberOne = Number(numberOneStr);
-  const numberTwo = Number(numberTwoStr);
-
   const isNumberOneInValid = isNaN(numberOne);
   if (isNumberOneInValid) {
     errors.push('операнд 1 не корректен');
   }
 
+  if (!operator.length) {
+  errors.push('нет оператора');
+  } else {
+    let isOperation =
+      (operator === '*') ||
+      (operator === '/') ||
+      (operator === '+') ||
+      (operator === '-')
+    if (!isOperation) {
+      errors.push('оператор не верный');
+    }
+  }
+
+  if (!numberTwoStr.length) {
+    errors.push('нет 2го операнда');
+  }
+
+  const numberTwo = Number(numberTwoStr);
   const isNumberTwoInValid = isNaN(numberTwo);
   if (isNumberTwoInValid) {
     errors.push('операнд 2 не корректен');
-  }
-
-  let isOperation =
-    (operator === '*') ||
-    (operator === '/') ||
-    (operator === '+') ||
-    (operator === '-')
-  if (!isOperation) {
-    errors.push('оператор не верный');
-  }
-
-  if (errors.length) {
-    return alert(errors.join('\n'));
-  }
-
-  if(numberTwo === 0) {
-    errors.push('на ноль делить нельзя');
   }
 
   if (errors.length) {
@@ -68,8 +59,12 @@ function func() {
         result = numberOne * numberTwo;
         break;
       case '/':
-         result = numberOne / numberTwo;
-        break;
+        if (numberTwo === 0) {
+          return alert('на ноль делить нельзя');
+        } else {
+          result = numberOne / numberTwo;
+          break;
+        }
     }
   }
 
