@@ -13,17 +13,13 @@ function func() {
   const operator = operatorNode.value.trim();
 
   if (!numberOneStr.length) {
-    errors.push('нет 1го операнда');
+    errors.push('Первое число не указаано');
   }
 
-  const numberOne = Number(numberOneStr);
-  const isNumberOneInValid = isNaN(numberOne);
-  if (isNumberOneInValid) {
-    errors.push('операнд 1 не корректен');
-  }
+
 
   if (!operator.length) {
-  errors.push('нет оператора');
+  errors.push('Не введён знак');
   } else {
     let isOperation =
       (operator === '*') ||
@@ -31,23 +27,24 @@ function func() {
       (operator === '+') ||
       (operator === '-')
     if (!isOperation) {
-      errors.push('оператор не верный');
+      errors.push('Программа не поддерживает такую операцию');
     }
   }
 
   if (!numberTwoStr.length) {
-    errors.push('нет 2го операнда');
+    errors.push('Второе число не указаано');
   }
 
   const numberTwo = Number(numberTwoStr);
-  const isNumberTwoInValid = isNaN(numberTwo);
-  if (isNumberTwoInValid) {
-    errors.push('операнд 2 не корректен');
+  const numberOne = Number(numberOneStr);
+  const isNumberInValid = isNaN(numberOne) || isNaN(numberTwo);
+  if (isNumberInValid) {
+    errors.push('Некорректный ввод чисел');
   }
 
   if (operator === '/') {
     if (numberTwo === 0) {
-      errors.push('на ноль делить нельзя');
+      errors.push('Операция некорректна');
     }
   }
 
