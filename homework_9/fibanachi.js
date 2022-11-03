@@ -1,4 +1,5 @@
-function makeFibonacciFunction() {
+
+const fibonacci = (() => {
   let a = 0;
   let b = 1;
 
@@ -9,9 +10,10 @@ function makeFibonacciFunction() {
     console.log(a);
     return;
   }
-}
+})();
+
 //буквеное название переменных использовано по причини формул и недоступности в глобальной области видимости.
-const fibonacci = makeFibonacciFunction();
+
 
 fibonacci();
 fibonacci();
@@ -21,6 +23,18 @@ fibonacci();
 fibonacci();
 fibonacci();
 fibonacci();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
