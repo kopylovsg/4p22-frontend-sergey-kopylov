@@ -28,8 +28,14 @@ fetch(url)
     console.log('-----------');
     console.log('Пункт №4:');
     console.log('-----------');
-    console.log(users.reduce((acc, item) => acc + item.first_name + " " + item.last_name + ", " ,
-    "Наша база содержит данные следующих пользователей: "));
+    console.log(users.reduce((acc, item, index, array) => {
+      let resString = `${item.first_name} ${item.last_name}`;
+      if (index !== array.length -1) {
+        resString += ', ';
+    }
+        acc += resString;
+      return acc;
+    },'Наша база содержит данные следующих пользователей: '));
 
     console.log('-----------');
     console.log('Пункт №5:');
