@@ -14,15 +14,15 @@ fetch(url)
     console.log('-----------');
     console.log('Пункт №2:');
     console.log('-----------');
-    users.forEach(element => {
-      console.log(element.last_name);
+    users.forEach(item => {
+      console.log(item.last_name);
     });
 
     console.log('-----------');
     console.log('Пункт №3:');
     console.log('-----------');
     users.filter(item => item.last_name[0].toUpperCase() === 'F').forEach(item => {
-      console.log(Object.values(item));
+      console.log(item);
     });
 
     console.log('-----------');
