@@ -7,7 +7,6 @@ const url = 'https://reqres.in/api/users?per_page=12';
 
 fetch(url)
   .then((response) => {
-    response;
     return response.json();
   })
   .then((result) => {
@@ -28,8 +27,8 @@ fetch(url)
     console.log('-----------');
     console.log('Пункт №3:');
     console.log('-----------');
-    users.filter(item => item.last_name[0].toUpperCase() === 'F').forEach(element => {
-      console.log(element);
+    users.filter(item => item.last_name[0].toUpperCase() === 'F').forEach(item => {
+      console.log(item);
     });
 
     console.log('-----------');
