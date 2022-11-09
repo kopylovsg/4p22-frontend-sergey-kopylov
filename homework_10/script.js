@@ -1,10 +1,4 @@
-// fetch('https://reqres.in/api/users?per_page=12')
-//   .then(response => response.json())
-//   .then((data) => let firstName = data.map(data => data.first_name + ' ')
-// // return console.log(firstName));
-
 const url = 'https://reqres.in/api/users?per_page=12';
-
 fetch(url)
   .then((response) => {
     return response.json();
@@ -28,19 +22,19 @@ fetch(url)
     console.log('Пункт №3:');
     console.log('-----------');
     users.filter(item => item.last_name[0].toUpperCase() === 'F').forEach(item => {
-      console.log(item);
+      console.log(Object.values(item));
     });
 
     console.log('-----------');
     console.log('Пункт №4:');
     console.log('-----------');
-console.log(users.reduce((acc, item) => acc + item.first_name + " " + item.last_name +', ',
-  "Наша база содержит данные следующих пользователей:"));
+    console.log(users.reduce((acc, item) => acc + item.first_name + " " + item.last_name + ", " ,
+    "Наша база содержит данные следующих пользователей: "));
 
     console.log('-----------');
     console.log('Пункт №5:');
     console.log('-----------');
-// так как данные однотипны выводим ключи первого пользователя
+    // так как данные однотипны выводим ключи первого пользователя
     const firstUser = users[0]
     Object.keys(firstUser).forEach((keyName) => {
       console.log(keyName);
