@@ -1,0 +1,220 @@
+*,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --all-color: #787878;
+  --font-actin: #1A226B;
+}
+
+html {
+  height: 100%;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  gap: 12.5rem;
+  justify-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 8rem;
+  font-family: 'Inter';
+  font-weight: bold;
+  background: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-bar__img {
+  flex: 1 2 15%;
+  margin: 1.8rem 3rem;
+  width: 22rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.nav-bar__header {
+  flex: 1 2 55%;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.nav-bar__link {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 2 20%;
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--all-color);
+}
+
+.nav-bar__link-registration {
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  color: var(--all-color)
+}
+
+.nav-bar__link-registration:focus {
+  border: 1px dashed #0b76ef;
+}
+
+.nav-bar__link-authorization {
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  color: var(--font-actin);
+}
+
+.nav-bar__link-authorization:focus {
+  border: 1px dashed #0b76ef;
+}
+
+.form-authorization {
+  display: grid;
+  justify-self: center;
+  gap: 1rem;
+  width: 60rem;
+  padding: 2rem 4.5rem 3.5rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+.authorization-header {
+  align-self: center;
+  text-align: center;
+  font-size: 5rem;
+  color: var(--all-color);
+}
+
+.authorization-email {
+  align-self: center;
+}
+
+.authorization-email__title {
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.6rem;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.authorization-email__input {
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
+  border: 2px solid var(--all-color);
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--all-color);
+}
+
+.authorization-email__input::placeholder {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.authorization-password {
+  align-self: center;
+  padding-bottom: 4rem;
+}
+
+.authorization-password__title {
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.6rem;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.authorization-password__input {
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
+  border: 2px solid var(--all-color);
+  font-size: 2.8rem;
+  color: var(--all-color);
+}
+
+.authorization-password__input::placeholder {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.authorization-button {
+  text-align: center;
+
+}
+.button {
+  align-self: center;
+  width: 18rem;
+  height: 5.2rem;
+  background: var(--font-actin);
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  background: #0b76ef;
+}
+
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 0.694vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 1.302vw
+  }
+
+  body {
+    gap: 8rem;
+  }
+
+  .nav-bar__img {
+    width: 12rem;
+    height: 2.5rem;
+  }
+
+  .nav-bar__header {
+    font-size: 2.4rem;
+  }
+
+  .nav-bar__link {
+    font-size: 1.6rem;
+  }
+
+  header {
+    max-width: 76.8rem;
+  }
+}

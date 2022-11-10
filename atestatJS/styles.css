@@ -1,0 +1,351 @@
+*,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --all-color: #787878;
+  --font-actin: #1A226B;
+}
+
+html {
+  height: 100%;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  gap: 10.2rem;
+  justify-items: center;
+  padding-bottom: 12.5rem;
+}
+
+header {
+  width: 100%;
+  max-width: 144rem;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 8rem;
+  font-family: 'Inter';
+  font-weight: 700;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-bar__img {
+  flex: 1 2 15%;
+  width: 22rem;
+  height: 5rem;
+  margin: 1.8rem 3rem;
+  object-fit: cover;
+}
+
+.nav-bar__header {
+  flex: 1 2 55%;
+  font-size: 3.6rem;
+  color: var(--all-color);
+}
+
+.nav-bar__link {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 2 20%;
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--all-color);
+}
+
+.nav-bar__link-registration {
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  color: var(--font-actin);
+}
+
+.nav-bar__link-registration:focus {
+  border: 1px dashed #0b76ef;
+}
+
+.nav-bar__link-authorization {
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  color: var(--all-color)
+}
+
+.nav-bar__link-authorization:focus {
+  border: 1px dashed #0b76ef;
+}
+
+.form-registration {
+  display: grid;
+  justify-self: center;
+  gap: 1rem;
+  width: 60rem;
+  padding: 1.9rem 4.5rem 3.7rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+ }
+
+
+.registration-header {
+  align-self: center;
+  text-align: center;
+  font-size: 5rem;
+  color: var(--all-color);
+
+}
+
+.registration-email {
+  align-self: center;
+
+}
+
+.registration-email__title {
+  padding-bottom: 0.3rem;
+  font-size: 1.6rem;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.registration-email__input {
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  border: 2px solid var(--all-color);
+  color: var(--all-color);
+}
+
+.registration-email__input::placeholder {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.registration-password {
+  align-self: center;
+}
+
+.registration-password__title {
+  padding-bottom: 0.3rem;
+  font-size: 1.6rem;
+  color: var(--all-color);
+  user-select: none;
+}
+
+.registration-password__input {
+  width: 51rem;
+  height: 4.9rem;
+  padding-left: 1.5rem;
+  font-size: 2.8rem;
+  border: 2px solid var(--all-color);
+  color: var(--all-color);
+}
+
+.registration-password__input::placeholder {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.registration-sex__title {
+  margin: 0 0 0.6rem -0.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--all-color);
+}
+
+.registration-sex__label {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 2rem;
+  margin-top: -0.4rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--all-color);
+  line-height: 2.0rem;
+}
+
+.registration-sex__label + .registration-sex__label {
+  margin-top: 1rem;
+}
+
+.registration-sex__input {
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  background-color: #fff;
+  font: inherit;
+  color: var(--all-color);
+  border: 2px solid var(--all-color);
+  border-radius: 50%;
+
+}
+
+.registration-sex__input {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.registration-sex__input:focus {
+  border: 1px solid #0b76ef;
+}
+
+.registration-sex__input::before {
+  content: "";
+  width: 1.0rem;
+  height: 1.0rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 220ms transform ease-in-out;
+  box-shadow: inset 1rem 1rem var(--all-color);
+}
+
+.registration-sex__input:checked::before {
+  transform: scale(1);
+}
+
+.registration-info {
+  width: 100%;
+  height: 26.6rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+
+.registration-info__title {
+  padding-bottom: 0.5rem;
+  font-size: 1.6rem;
+
+  color: var(--all-color);
+}
+
+.registration-info__about {
+  width: 100%;
+  height: 24.6rem;
+  padding-left: 1.5rem;
+  border: 2px solid var(--all-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--all-color);
+  resize: none;
+}
+
+.registration-info__about::placeholder {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.registration-agreement {
+  display: grid;
+  grid-template-columns: 0px auto;
+  gap: 2.8rem;
+  margin-bottom: 4.5rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--all-color);
+  line-height: 1.5;
+
+}
+
+.registration-agreement__input {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  font: inherit;
+  color: var(--all-color);
+  border: 2px solid var(--all-color);
+  appearance: none;
+}
+
+.registration-agreement__input {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.registration-agreement__input:focus {
+  border: 1px solid #0b76ef;
+}
+
+.registration-agreement__input::before {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: scale(0);
+  transition: 220ms transform ease-in-out;
+  box-shadow: inset 1rem 1rem var(--all-color);
+}
+
+.registration-agreement__input:checked::before {
+  transform: scale(1);
+}
+
+.registration-button {
+  text-align: center;
+}
+
+.button {
+  align-self: center;
+  width: 18rem;
+  height: 5.2rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background: var(--font-actin);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  background: #0b76ef;
+}
+
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 0.694vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 1.302vw
+  }
+  body {
+    gap: 6.1rem;
+  }
+
+  .nav-bar__img {
+    width: 12rem;
+    height: 2.5rem;
+    }
+
+  .nav-bar__header {
+    font-size: 2.4rem;
+  }
+
+  .nav-bar__link {
+    font-size: 1.6rem;
+  }
+
+  header {
+    max-width: 76.8rem;
+  }
+}
