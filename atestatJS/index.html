@@ -20,18 +20,21 @@
   </header>
   <form class="form-registration" id="formSubmit">
     <h2 class="registration-header">Регистрация</h2>
-    <div class="registration-email">
-    <p class="registration-email__title" data-js-mail-title>* Email</p>
-    <input class="registration-email__input" name="email" placeholder="Введите em@il" data-js-mail>
+    <div class="registration-box">
+    <span class="registration__title">* Email</span>
+    <span class="form-registration__error" data-js-mail-error></span>
+    <input class="registration__input" name="email" placeholder="Введите em@il" data-js-mail>
     </div>
-    <div class="registration-password">
-      <p class="registration-password__title">* Пароль</p>
-      <input class="registration-password__input" name="password" type="password" placeholder="Введите пароль"
+    <div class="registration-box">
+      <span class="registration__title">* Пароль</span>
+      <span class="form-registration__error" data-js-password-error></span>
+      <input class="registration__input" name="password" type="password" placeholder="Введите пароль"
              data-js-password>
     </div>
-    <div class="registration-password">
-      <p class="registration-password__title">* Подтверждение пароль</p>
-      <input class="registration-password__input" name="password-verification" type="password"
+    <div class="registration-box">
+      <span class="registration__title">* Подтверждение пароль</span>
+      <span class="form-registration__error" data-js-passwordVer-error></span>
+      <input class="registration__input" name="password-verification" type="password"
              placeholder="Подтвердите пароль" data-js-passwordVer>
     </div>
     <div class="registration-sex">
@@ -39,14 +42,14 @@
       <label class="registration-sex__label">
       <input class="registration-sex__input" type="radio" name="radio" value="men" checked>Мужчина</label>
       <label class="registration-sex__label">
-      <input class="registration-sex__input" type="radio" name="radio" value="wopmen">Женщина</label>
+      <input class="registration-sex__input" type="radio" name="radio" value="women">Женщина</label>
     </div>
     <div class="registration-info">
       <p class="registration-info__title">О себе</p>
       <textarea class="registration-info__about" name="about" placeholder="Расскажите о себе..."></textarea>
     </div>
     <label class="registration-agreement" for="agreement">
-      <input class="registration-agreement__input" type="checkbox" id="agreement" name="agreement" value="yes">
+      <input class="registration-agreement__input" type="checkbox" id="agreement" name="agreement" value="0">
       Я согласен получать обновление на почту
     </label>
     <div class="registration-button">
