@@ -19,12 +19,12 @@ function submitForm(formNode) {
       const {name, type} = element;
       const volue = type === 'checkbox' ? element.checked : element.value;
 
-
       return {name, volue};
     })
     .filter((item) => !!item.name);
 
   console.log(data);
+
   document.getElementById('formSubmit').reset()
   mailErrorData.innerHTML = " ";
   passwordErrorData.innerHTML = " ";
@@ -44,7 +44,7 @@ function handleFormSubmit(event) {
     function validateEmail(email) {
       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(String(email).toLowerCase());
-    };
+    }
 
     if (!validatMail.length) {
       emailData.style.borderColor = colorError;
@@ -52,28 +52,27 @@ function handleFormSubmit(event) {
     } else if (!validateEmail(validatMail)) {
       mailErrorData.innerHTML = "Email введён некорректно";
       emailData.style.borderColor = colorError;
-    };
+    }
 
     if (!validatPassvord.length) {
       passwordData.style.borderColor = colorError;
       passwordErrorData.innerHTML = errorLength;
       return;
-    };
+    }
 
     if (validatPassvord.length < 8) {
       passwordData.style.borderColor = colorError;
       passwordErrorData.innerHTML = "Пароль должен содержать не менее 8 символов";
-    };
+    }
 
     if (!validatPassvordVer.length || validatPassvordVer.length < 8 || validatPassvord !== validatPassvordVer) {
       passwordVerData.style.borderColor = colorError;
       passwordVerErrorData.innerHTML = "Пароли не совпадают";
       return;
-    };
-
+    }
 
   submitForm(applicantForm);
-};
+}
 
 
 
