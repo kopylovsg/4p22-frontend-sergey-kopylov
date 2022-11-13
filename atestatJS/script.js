@@ -4,13 +4,14 @@ const passwordErrorData = document.querySelector('[data-js-password-error]');
 const passwordData = document.querySelector('[data-js-password]');
 const passwordVerErrorData = document.querySelector('[data-js-passwordVer-error]');
 const passwordVerData = document.querySelector('[data-js-passwordVer]');
-const colorError = 'red';
+let colorError = 'red';
+const colorNoError = 'grey';
 const errorLength = "Поле обязательно для заполнения";
 
 const applicantForm = document.getElementById('formSubmit')
 applicantForm.addEventListener('submit', handleFormSubmit);
 
-function serializeForm(formNode) {
+function submitForm(formNode) {
   const { elements } = formNode;
 
   const data = Array.from(elements)
@@ -24,6 +25,13 @@ function serializeForm(formNode) {
     .filter((item) => !!item.name);
 
   console.log(data);
+  document.getElementById('formSubmit').reset()
+  mailErrorData.innerHTML = " ";
+  passwordErrorData.innerHTML = " ";
+  passwordVerErrorData.innerHTML = " ";
+  passwordVerData.style.borderColor = colorNoError;
+  emailData.style.borderColor = colorNoError;
+  passwordData.style.borderColor = colorNoError;
 }
 
 function handleFormSubmit(event) {
@@ -40,30 +48,31 @@ function handleFormSubmit(event) {
 
     if (!validatMail.length) {
       emailData.style.borderColor = colorError;
-      document.querySelector('[data-js-mail-error]').innerHTML = errorLength;
+      mailErrorData.innerHTML = errorLength;
     } else if (!validateEmail(validatMail)) {
-      document.querySelector('[data-js-mail-error]').innerHTML = "Email введён некорректно";
+      mailErrorData.innerHTML = "Email введён некорректно";
       emailData.style.borderColor = colorError;
     };
 
     if (!validatPassvord.length) {
       passwordData.style.borderColor = colorError;
-      document.querySelector('[data-js-password-error]').innerHTML = errorLength;
+      passwordErrorData.innerHTML = errorLength;
       return;
     };
 
     if (validatPassvord.length < 8) {
       passwordData.style.borderColor = colorError;
-      document.querySelector('[data-js-password-error]').innerHTML = "Пароль должен содержать не менее 8 символов";
+      passwordErrorData.innerHTML = "Пароль должен содержать не менее 8 символов";
     };
 
     if (!validatPassvordVer.length || validatPassvordVer.length < 8 || validatPassvord !== validatPassvordVer) {
       passwordVerData.style.borderColor = colorError;
-      document.querySelector('[data-js-passwordVer-error]').innerHTML = "Пароли не совпадают";
+      passwordVerErrorData.innerHTML = "Пароли не совпадают";
       return;
     };
 
-    serializeForm(applicantForm)
+
+  submitForm(applicantForm);
 };
 
 
