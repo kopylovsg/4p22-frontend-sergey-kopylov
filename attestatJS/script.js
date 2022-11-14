@@ -2,8 +2,8 @@ const mailErrorData = document.getElementById('email-error');
 const emailData = document.getElementById('email');
 const passwordErrorData = document.getElementById('password-error');
 const passwordData = document.getElementById('password');
-const passwordVerErrorData = document.getElementById('passwordVer-error');
-const passwordVerData = document.getElementById('passwordVer');
+const passwordСonfirmationErrorData = document.getElementById('passwordСonfirmation-error');
+const passwordСonfirmationData = document.getElementById('passwordСonfirmation');
 const colorError = 'red';
 const colorNoError = '#787878';
 const errorLength = "Поле обязательно для заполнения";
@@ -27,8 +27,8 @@ function submitForm(formNode) {
   document.getElementById('formSubmit').reset()
   mailErrorData.innerHTML = " ";
   passwordErrorData.innerHTML = " ";
-  passwordVerErrorData.innerHTML = " ";
-  passwordVerData.style.borderColor = colorNoError;
+  passwordСonfirmationErrorData.innerHTML = " ";
+  passwordСonfirmationData.style.borderColor = colorNoError;
   emailData.style.borderColor = colorNoError;
   passwordData.style.borderColor = colorNoError;
 }
@@ -42,7 +42,7 @@ function handleFormSubmit(event) {
     event.preventDefault();
     const validatEmail = emailData.value
     const validatPassword = passwordData.value;
-    const validatPasswordVer = passwordVerData.value;
+    const validatPasswordСonfirmation = passwordСonfirmationData.value;
 
     if (!validatEmail.length) {
       emailData.style.borderColor = colorError;
@@ -63,9 +63,9 @@ function handleFormSubmit(event) {
       passwordErrorData.innerHTML = "Пароль должен содержать не менее 8 символов";
     }
 
-    if (!validatPasswordVer.length || validatPasswordVer.length < 8 || validatPassword !== validatPasswordVer) {
-      passwordVerData.style.borderColor = colorError;
-      passwordVerErrorData.innerHTML = "Пароли не совпадают";
+    if (!validatPasswordСonfirmation.length || validatPasswordСonfirmation.length < 8 || validatPassword !== validatPasswordСonfirmation) {
+      passwordСonfirmationData.style.borderColor = colorError;
+      passwordСonfirmationErrorData.innerHTML = "Пароли не совпадают";
       return;
     }
 
