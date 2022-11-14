@@ -115,7 +115,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 3px;
+  row-gap: 0.2rem;
 
 }
 

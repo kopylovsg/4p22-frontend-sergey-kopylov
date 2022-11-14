@@ -5,7 +5,7 @@ const passwordData = document.getElementById('password');
 const passwordVerErrorData = document.getElementById('passwordVer-error');
 const passwordVerData = document.getElementById('passwordVer');
 const colorError = 'red';
-const colorNoError = 'grey';
+const colorNoError = '#787878';
 const errorLength = "Поле обязательно для заполнения";
 
 const applicantForm = document.getElementById('formSubmit')
@@ -22,7 +22,6 @@ function submitForm(formNode) {
       return {name, volue};
     })
     .filter((item) => !!item.name);
-
   console.log(data);
 
   document.getElementById('formSubmit').reset()
@@ -41,14 +40,14 @@ function validateEmail(email) {
 
 function handleFormSubmit(event) {
     event.preventDefault();
-
+    const validatEmail = emailData.value
     const validatPassword = passwordData.value;
     const validatPasswordVer = passwordVerData.value;
 
-    if (!emailData.length) {
+    if (!validatEmail.length) {
       emailData.style.borderColor = colorError;
       mailErrorData.innerHTML = errorLength;
-    } else if (!validateEmail(emailData)) {
+    } else if (!validateEmail(validatEmail)) {
       mailErrorData.innerHTML = "Email введён некорректно";
       emailData.style.borderColor = colorError;
     }
