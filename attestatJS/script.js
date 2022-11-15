@@ -11,18 +11,12 @@ const errorLength = "Поле обязательно для заполнения
 const applicantForm = document.getElementById('formSubmit')
 applicantForm.addEventListener('submit', handleFormSubmit);
 
-function submitForm(formNode) {
-  const { elements } = formNode;
-
-  const data = Array.from(elements)
-    .map((element) => {
-      const {name, type} = element;
-      const volue = type === 'checkbox' ? element.checked : element.value;
-
-      return {name, volue};
-    })
-    .filter((item) => !!item.name);
-  console.log(data);
+function submitForm() {
+  let formData = new FormData(formSubmit);
+  for(let [name, value] of formData) {
+    let data = {name, value};
+    console.log(data);
+  }
 
   document.getElementById('formSubmit').reset()
   mailErrorData.innerHTML = " ";
