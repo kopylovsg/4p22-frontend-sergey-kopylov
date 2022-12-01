@@ -1,9 +1,9 @@
-const mailErrorData = document.getElementById('email-error');
-const emailData = document.getElementById('email');
-const passwordErrorData = document.getElementById('password-error');
-const passwordData = document.getElementById('password');
-const passwordСonfirmationErrorData = document.getElementById('passwordСonfirmation-error');
-const passwordСonfirmationData = document.getElementById('passwordСonfirmation');
+const mailErrorNode = document.getElementById('email-error');
+const emailNode = document.getElementById('email');
+const passwordErrorNode = document.getElementById('password-error');
+const passwordNode = document.getElementById('password');
+const passwordСonfirmationErrorNode = document.getElementById('passwordСonfirmation-error');
+const passwordСonfirmationNode = document.getElementById('passwordСonfirmation');
 const colorError = 'red';
 const colorNoError = '#787878';
 const errorLength = "Поле обязательно для заполнения";
@@ -13,18 +13,18 @@ applicantForm.addEventListener('submit', handleFormSubmit);
 
 function submitForm() {
   let formData = new FormData(formSubmit);
-  for(let [name, value] of formData) {
+  for (let [name, value] of formData) {
     let data = {name, value};
     console.log(data);
   }
 
   document.getElementById('formSubmit').reset()
-  mailErrorData.innerHTML = " ";
-  passwordErrorData.innerHTML = " ";
-  passwordСonfirmationErrorData.innerHTML = " ";
-  passwordСonfirmationData.style.borderColor = colorNoError;
-  emailData.style.borderColor = colorNoError;
-  passwordData.style.borderColor = colorNoError;
+  mailErrorNode.innerHTML = " ";
+  passwordErrorNode.innerHTML = " ";
+  passwordСonfirmationErrorNode.innerHTML = " ";
+  passwordСonfirmationNode.style.borderColor = colorNoError;
+  emailNode.style.borderColor = colorNoError;
+  passwordNode.style.borderColor = colorNoError;
 }
 
 function validateEmail(email) {
@@ -34,32 +34,32 @@ function validateEmail(email) {
 
 function handleFormSubmit(event) {
     event.preventDefault();
-    const validatEmail = emailData.value
-    const validatPassword = passwordData.value;
-    const validatPasswordСonfirmation = passwordСonfirmationData.value;
+    const validatEmail = emailNode.value
+    const validatPassword = passwordNode.value;
+    const validatPasswordСonfirmation = passwordСonfirmationNode.value;
 
     if (!validatEmail.length) {
-      emailData.style.borderColor = colorError;
-      mailErrorData.innerHTML = errorLength;
+      emailNode.style.borderColor = colorError;
+      mailErrorNode.innerHTML = errorLength;
     } else if (!validateEmail(validatEmail)) {
-      mailErrorData.innerHTML = "Email введён некорректно";
-      emailData.style.borderColor = colorError;
+      mailErrorNode.innerHTML = "Email введён некорректно";
+      emailNode.style.borderColor = colorError;
     }
 
     if (!validatPassword.length) {
-      passwordData.style.borderColor = colorError;
-      passwordErrorData.innerHTML = errorLength;
-      return;
+      passwordNode.style.borderColor = colorError;
+      passwordErrorNode.innerHTML = errorLength;
+
     }
 
     if (validatPassword.length < 8) {
-      passwordData.style.borderColor = colorError;
-      passwordErrorData.innerHTML = "Пароль должен содержать не менее 8 символов";
+      passwordNode.style.borderColor = colorError;
+      passwordErrorNode.innerHTML = "Пароль должен содержать не менее 8 символов";
     }
 
     if (!validatPasswordСonfirmation.length || validatPasswordСonfirmation.length < 8 || validatPassword !== validatPasswordСonfirmation) {
-      passwordСonfirmationData.style.borderColor = colorError;
-      passwordСonfirmationErrorData.innerHTML = "Пароли не совпадают";
+      passwordСonfirmationNode.style.borderColor = colorError;
+      passwordСonfirmationErrorNode.innerHTML = "Пароли не совпадают";
       return;
     }
 
